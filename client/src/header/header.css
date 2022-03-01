@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  height: 116px;
+  background-color: #1b3461;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.accueil {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.navigation {
+  flex: 1;
+}
