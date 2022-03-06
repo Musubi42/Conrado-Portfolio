@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Musubi42/Conrado-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Musubi42/Conrado-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Musubi42/Conrado-Portfolio#readme",
+  "dependencies": {
+    "fastify": "^3.27.2"
+  }
+}
