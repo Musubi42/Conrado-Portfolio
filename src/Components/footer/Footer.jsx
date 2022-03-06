@@ -9,9 +9,9 @@ export default function footer() {
       </div>
       <div className="footerMilieu">
         <ul className="footerList">
-          <li className="footerItem"><a href="#">MENTIONS LEGALES</a></li>
-          <li className="footerItem"><a href="#">FAQ</a></li>
-          <li className="footerItem"><a href="#">POLITIQUE DE CONFIDENTIALITE</a></li>
+          <li className="footerItem"><a href="/">MENTIONS LEGALES</a></li>
+          <li className="footerItem"><a href="/">FAQ</a></li>
+          <li className="footerItem"><a href="/">POLITIQUE DE CONFIDENTIALITE</a></li>
         </ul>
       </div>
       <div className="footerDroite">
