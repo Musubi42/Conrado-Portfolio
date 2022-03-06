@@ -15,17 +15,6 @@
   flex: 1;
 }
 
-.footerDivWatermark {
-  display: inline-block;
-}
-
-.footerWatermark {
-  display: block;
-  padding: 3px;
-  top: 0;
-  font-size: 5px;
-}
-
 .footerMilieu {
   flex: 5;
 }
