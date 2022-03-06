@@ -32,4 +32,4 @@ jobs:
         run: npm run build --if-present
 
       - name: pm2 NodeJS Daemon
-        run: pm2 restart DeployApp
+        run: pm2 restart test
