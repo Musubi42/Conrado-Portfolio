@@ -10,7 +10,7 @@ export default function header() {
       </div>
       <div className="navigation">
         <ul className="list">
-          <li className="item">ACCUEILLE</li>
+          <li className="item">ACCUEIL</li>
           <li className="item">LOGOS</li>
           <li className="item">MOCKUPS</li>
           <li className="item">PAGE WEB</li>
