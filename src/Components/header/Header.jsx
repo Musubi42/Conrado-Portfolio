@@ -8,7 +8,6 @@ export default function header() {
       <div className="accueil">
         <img className="logo" src={logoConrado} alt="Logo Conrado" />
       </div>
-      <div className="navigation">
         <ul className="list">
           <li className="item">ACCUEIL</li>
           <li className="item">LOGOS</li>
@@ -17,7 +16,6 @@ export default function header() {
           <li className="item">A PROPOS</li>
           <li className="item">CONTACT</li>
         </ul>
-      </div>
     </div>
   )
 }
