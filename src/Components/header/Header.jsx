@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from "react-router-dom"
 import "./header.css"
 import logoConrado from '../../images/Logo_Conrado.svg'
 
@@ -9,12 +9,12 @@ export default function header() {
         <img className="logo" src={logoConrado} alt="Logo Conrado" />
       </div>
         <ul className="list">
-          <li className="item">ACCUEIL</li>
-          <li className="item">LOGOS</li>
-          <li className="item">MOCKUPS</li>
-          <li className="item">PAGE WEB</li>
-          <li className="item">A PROPOS</li>
-          <li className="item">CONTACT</li>
+          <li className="item"><Link className="link" to="/accueil">ACCUEIL</Link></li>
+          <li className="item"><Link className="link" to="/logos">LOGO</Link></li>
+          <li className="item"><Link className="link" to="/mockups">MOCKUPS</Link></li>
+          <li className="item"><Link className="link" to="/page_web">PAGE WEB</Link></li>
+          <li className="item"><Link className="link" to="/a_propos">A PROPOS</Link></li>
+          <li className="item"><Link className="link" to="/contact">CONTACT</Link></li>
         </ul>
     </div>
   )
