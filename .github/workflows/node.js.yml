@@ -33,3 +33,6 @@ jobs:
 
       - name: pm2 NodeJS Daemon
         run: pm2 restart test
+
+      -name: Move the Build to /var/www/portfolio
+        run: CD_Conrado_Portfolio_Front
