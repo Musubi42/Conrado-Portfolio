@@ -9,7 +9,7 @@ export default function header() {
         <img className="logo" src={logoConrado} alt="Logo Conrado" />
       </div>
         <ul className="list">
-          <li className="item"><Link className="link" to="/accueil">ACCUEIL</Link></li>
+          <li className="item"><Link className="link" to="/accueil">TEST</Link></li>
           <li className="item"><Link className="link" to="/logos">LOGO</Link></li>
           <li className="item"><Link className="link" to="/mockups">MOCKUPS</Link></li>
           <li className="item"><Link className="link" to="/page_web">PAGE WEB</Link></li>
