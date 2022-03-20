@@ -34,5 +34,12 @@ jobs:
       #- name: pm2 NodeJS Daemon
       #  run: pm2 restart test
 
-      - name: Move the Build to /var/www/portfolio
-        run: CD_Conrado_Portfolio_Front
+      # Je n'arrive pas à update la CD_Conrado...
+      #- name: Move the Build to /var/www/portfolio
+      #  run: CD_Conrado_Portfolio_Front
+        
+      - name: Delete the content of /var/www/cmonpanierbio
+        run: rm -r /var/www/cmonpanierbio
+        
+      - name: Copy the content of the deployed App to /var/www/cmonpanier
+        run: cp -r /home/debian/deploy/Conrado-Portfolio/Conrado-Portfolio/build/* /var/www/cmonpanierbio/
