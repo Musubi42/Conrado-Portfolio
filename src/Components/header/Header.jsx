@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import "./header.css"
-import logoConrado from '../../images/Logo_Conrado.svg'
+import logoConrado from '../../Assets/Logo_Conrado.svg'
 
 export default function header() {
   return (
