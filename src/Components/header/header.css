@@ -7,7 +7,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Red Hat Display", sans-serif;
 }
 
 .accueil {
@@ -37,4 +36,10 @@
   font-weight: 300;
   cursor: pointer;
   text-decoration: none;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 33px;
 }
