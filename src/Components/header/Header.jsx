@@ -7,6 +7,9 @@ export default function header() {
     <div className="header">
       <div className="accueil">
         <img className="logo" src={logoConrado} alt="Logo Conrado" />
+        <div className="containerHeaderLogoName">
+          <span className="headerLogoName">CONRAD</span><span className="headerLogoName">EDISON</span>
+        </div>
       </div>
         <ul className="list">
           <li className="item"><Link className="link" to="/accueil">TEST</Link></li>
