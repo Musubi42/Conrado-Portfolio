@@ -9,7 +9,7 @@ export default function footer() {
       </div>
       <div className="footerMilieu">
         <ul className="footerList">
-          <li className="footerItem" style={{cursor: "unset"}}>CONRAD DESIGN 2022 TOUS DROIT RESERVES</li>
+          <li className="footerItem" style={{cursor: "unset", fontWeight: 400 }}>CONRAD DESIGN 2022 TOUS DROIT RESERVES</li>
           <li className="footerItem"><Link className="link" to="/mentions_legales">MENTIONS LEGALES</Link></li>
           <li className="footerItem"><Link className="link" to="/faq">FAQ</Link></li>
           <li className="footerItem"><Link className="link" to="/politique_de_confidentialite">POLITIQUE DE CONFIDENTIALITE</Link></li>
