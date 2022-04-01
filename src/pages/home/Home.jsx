@@ -1,6 +1,5 @@
 import React from 'react'
 import "./home.css"
-import background from './../../Assets/Costard_Cravatte.png'
 
 export default function Home() {
   return (
