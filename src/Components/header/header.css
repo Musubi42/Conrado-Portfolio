@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 116px;
+  height: 100px;
   background-color: #1b3461;
   position: sticky;
   top: 0;
@@ -10,15 +10,38 @@
 }
 
 .accueil {
+  position: absolute;
+  left: 20px;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  right: 20px;
   margin-right: 10px;
   cursor: pointer;
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
+  /* width: 40px; */
+  height: 70px;
+}
+
+.containerHeaderLogoName {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px 0px 10px;
+}
+
+.headerLogoName {
+  /* display: flex; */
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 2px 0px 2px 0px;
+
+  color: #E8C135;
 }
 
 .list {
@@ -31,7 +54,7 @@
 
 .item {
   margin-right: 5vw;
-  font-size: 0.5rem;
+  font-size: 1.1rem;
   color: #e8c135;
   font-weight: 300;
   cursor: pointer;
@@ -40,6 +63,4 @@
   font-family: "Red Hat Display", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
-  line-height: 33px;
 }
