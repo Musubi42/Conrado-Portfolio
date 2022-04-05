@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/header/Header";
 import Footer from "./Components/footer/Footer";
 import Home from "./pages/home/Home";
@@ -15,13 +15,27 @@ import NoMatch from "./pages/no-match/NoMatch";
 
 function App() {
   return (
-    <Router>
+    <>
       <Header />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/accueil">
+      <Routes>
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/accueil" element={<Home />} />
+        <Route path="/logo" element={<Logo />} />
+        <Route path="/mockup" element={<Mockup />} />
+        <Route path="/page_web" element={<WebPage />} />
+        <Route path="/a_propos" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/mentions_legales" element={<Terms />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/politique_de_confidentialite" element={<Privacy />} />
+      </Routes>
+      <Footer />
+    </>
+  );
+}
+
+{
+  /* <Route path="/accueil">
           <Home />
         </Route>
         <Route path="/logos">
@@ -51,10 +65,7 @@ function App() {
         <Route path="/*">
           <NoMatch />
         </Route>
-      </Switch>
-      <Footer />
-    </Router>
-  );
+        <Footer />
+      </Routes> */
 }
-
 export default App;
