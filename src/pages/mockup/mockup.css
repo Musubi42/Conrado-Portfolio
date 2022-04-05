@@ -1,0 +1,34 @@
+.mockupMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #bfbfbf;
+}
+
+.mockupTitles {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 64px;
+
+  display: flex;
+  align-items: center;
+  margin: 30px;
+  color: #1B3461;
+}
+
+.mockupContainer {
+  margin: 30px;
+}
+
+.mockupItems {
+  width: 50vw;
+  height: 40vh;
+  margin: 50px;
+  background: red;
+}
