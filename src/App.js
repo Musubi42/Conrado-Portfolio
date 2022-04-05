@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./Components/header/Header";
 import Footer from "./Components/footer/Footer";
 import Home from "./pages/home/Home";
@@ -11,7 +11,7 @@ import Mockup from "./pages/mockup/Mockup";
 import Terms from "./pages/terms/Terms";
 import Faq from "./pages/faq/Faq";
 import Privacy from "./pages/privacy/Privacy";
-import NoMatch from "./pages/no-match/NoMatch";
+// import NoMatch from "./pages/no-match/NoMatch";
 
 function App() {
   return (
@@ -32,40 +32,5 @@ function App() {
       <Footer />
     </>
   );
-}
-
-{
-  /* <Route path="/accueil">
-          <Home />
-        </Route>
-        <Route path="/logos">
-          <Logo />
-        </Route>
-        <Route path="/mockups">
-          <Mockup />
-        </Route>
-        <Route path="/page_web">
-          <WebPage />
-        </Route>
-        <Route path="/a_propos">
-          <About />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/mentions_legales">
-          <Terms />
-        </Route>
-        <Route path="faq">
-          <Faq />
-        </Route>
-        <Route path="/politique_de_confidentialite">
-          <Privacy />
-        </Route>
-        <Route path="/*">
-          <NoMatch />
-        </Route>
-        <Footer />
-      </Routes> */
 }
 export default App;

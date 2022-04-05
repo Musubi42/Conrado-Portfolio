@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 // import Header from "./Components/header/Header";
 // import Footer from "./Components/footer/Footer";
 // import Home from "./pages/home/Home";
