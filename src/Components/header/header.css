@@ -44,7 +44,7 @@
   color: #E8C135;
 }
 
-.list {
+.headerList {
   display: flex;
   justify-content: center;
   margin: 0;
@@ -52,7 +52,7 @@
   list-style: none;
 }
 
-.item {
+.headerItem {
   margin-right: 5vw;
   font-size: 1.1rem;
   color: #e8c135;
