@@ -3,18 +3,18 @@ import "./logo.css"
 
 export default function Logo() {
   return (
-    <div className="logosMain">
-      <h1 className="logosTitle">LOGOS</h1>
-      <div className="logosContainer">
-        {/* Venir ajouter les logos à la suite */}
-        <div className="logosItems"></div>
-        <div className="logosItems"></div>
-        <div className="logosItems"></div>
-        <div className="logosItems"></div>
-        <div className="logosItems"></div>
-        <div className="logosItems"></div>
-        <div className="logosItems"></div>
-        <div className="logosItems"></div>
+    <div className="logoMain">
+      <h1 className="logoTitle">logo</h1>
+      <div className="logoContainer">
+        {/* Venir ajouter les logo à la suite */}
+        <div className="logoItems"></div>
+        <div className="logoItems"></div>
+        <div className="logoItems"></div>
+        <div className="logoItems"></div>
+        <div className="logoItems"></div>
+        <div className="logoItems"></div>
+        <div className="logoItems"></div>
+        <div className="logoItems"></div>
       </div>
     </div>
   )

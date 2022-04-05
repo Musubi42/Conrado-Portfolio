@@ -1,4 +1,4 @@
-.logosMain {
+.logoMain {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
   background: #bfbfbf;
 }
 
-.logosTitle {
+.logoTitle {
   font-family: 'Red Hat Display';
   font-style: normal;
   font-weight: 700;
@@ -26,7 +26,7 @@
 }
 
 /* je vais faire des greeds pour respecter l'envie de deux colonnes  */
-.logosContainer {
+.logoContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4, 1fr);
@@ -35,7 +35,7 @@
   margin-bottom: 140px;
 }
 
-.logosItems {
+.logoItems {
   width: 500px;
   height: 300px;
   border-radius: 10px;
