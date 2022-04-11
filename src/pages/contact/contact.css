@@ -21,7 +21,8 @@
   margin-top: 100px;
   width: 75vw;
   padding: 25px 25px 30px 60px;
-  /* justify-content: flex-end; */
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .contactTitleContact {
@@ -30,13 +31,6 @@
   font-weight: 700;
   font-size: 2rem;
   line-height: 64px;
-
-  display: flex;
-  justify-content: flex-end;
-  /* align-items: ; */
-  /* position: absolute; */
-  /* right: 20px;
-  margin: 30px; */
   color: #1b3461;
 }
 
@@ -50,12 +44,18 @@
 
 .contactLogoConrado {
   height: 200px;
-  margin-right: 50px;
+  margin-right: 150px;
 }
 
 .contactForm {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 10%;
+  row-gap: 10%;
+  
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -64,10 +64,80 @@
   height: 100%;
 }
 
-.contactInput {
-  line-height: 20px;
+/* .contactInput {
+  line-height: 1.5rem;
+  width: 35vh;
+  margin: 20px;
+} */
+
+.contactForm > * {
+  height: 100%;
+  border-radius: none;
+}
+
+.contactInputName {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;  
+}
+
+.contactInputEmail {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3; 
+}
+
+.contactInputTel {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.contactInputObjet {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.contactInputContainerDescription {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  height: 100%;
+}
+
+.contactInputDescription {
+  display:flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.contactInputNewsLetter {
+  align-items: flex-end;
 }
 
 .contactButtonContact {
   text-decoration: none;
+  border: none;
+  background-color: #1b3461;
+  box-shadow: 0px 5px 25px -6px rgba(0, 32, 108, 0.35);
+  border-radius: 10px;
+  width: 299px;
+  height: 63px;
+
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+
+  color: #FFFFFF;
 }

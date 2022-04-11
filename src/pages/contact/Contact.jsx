@@ -14,23 +14,49 @@ export default function Contact() {
             className="contactLogoConrado"
           />
           <form action="submit" className="contactForm">
+            {/* Je crois que je vais devoir faire une grid */}
+            {/* Et placer les input dans grid columun et row */}
             <input
-              className="contactInput"
+              className="contactInputName"
               type="text"
               placeholder="Nom/Prénom"
             />
-            <input className="contactInput" type="email" placeholder="Mail" />
             <input
-              className="contactInput"
+              className="contactInputEmail"
+              type="email"
+              placeholder="Mail"
+            />
+            <input
+              className="contactInputTel"
               type="tel"
               placeholder="Téléphone"
             />
-            <input className="contactInput" type="text" placeholder="Objet" />
             <input
-              className="contactInput"
+              className="contactInputObjet"
               type="text"
-              placeholder="Description"
+              placeholder="Objet"
             />
+            <div className="contactInputContainerDescription">
+              <textarea
+                name="description"
+                id="description"
+                // cols="30"
+                // rows="10"
+                className="contactInputDescription"
+              ></textarea>
+              <label className="contactInputNewsLetter">
+                <input type="checkbox" />
+                &nbsp;Cochez cette case afin de vous inscrire à ma newsletter
+              </label>
+            </div>
+            {/* <input
+              type="checkbox"
+              id="contactInputNewsletter"
+              className="contactInputNewsletter"
+            />
+            <label for="contactInputNewsletter">
+              Cochez cette case afin de vous inscrire à ma newsletter
+            </label> */}
           </form>
         </div>
         <button className="contactButtonContact">SOUMETTRE</button>
