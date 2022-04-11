@@ -40,6 +40,7 @@ export default function Contact() {
               <textarea
                 name="description"
                 id="description"
+                placeholder="Description"
                 // cols="30"
                 // rows="10"
                 className="contactInputDescription"
