@@ -14,7 +14,7 @@
 .contactDivContact {
   display: flex;
   flex-direction: column;
-  background: url('../../Assets/Bureau_design.png');
+  background: url('../../Assets/background-image_bureau_design.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
@@ -121,6 +121,13 @@
   /* height: 100%; */
 }
 
+.contactInputDescription {
+  display:flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
 textarea::placeholder {
   font-family: 'Red Hat Display';
   font-style: normal;
@@ -128,13 +135,6 @@ textarea::placeholder {
   font-size: 18px;
   line-height: 24px;
   color: rgba(27, 52, 97, 0.69);
-}
-
-.contactInputDescription {
-  display:flex;
-  flex-direction: row;
-  height: 100%;
-  width: 100%;
 }
 
 .contactInputNewsLetter {
@@ -149,7 +149,7 @@ textarea::placeholder {
   border-radius: 10px;
   width: 299px;
   height: 63px;
-  margin-top: 100px; 
+  margin-top: 15px; 
 
 
   font-family: 'Red Hat Display';
@@ -158,4 +158,69 @@ textarea::placeholder {
   font-size: 30px;
   line-height: 40px;
   color: #FFFFFF;
+}
+
+.contactNetwork {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contactNetworkTitle {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 64px;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1b3461;
+}
+
+.contactNetworkContainerLogos {
+  display: flex;
+  flex-direction: row;
+}
+
+.contactNetworkLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 25px 0px 25px;
+}
+
+.contactNetworkLogoButton {
+  background: #E8C135;
+  /* background-image: url(../../Assets/logo_instagram.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  */
+  box-shadow: 0px 10px 25px -5px rgba(242, 205, 70, 0.58);
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+#contactLogoInstagram {
+  background-image: url(../../Assets/logo_instagram.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.contactNetworkLogoButtonName::after {
+  display: inline-block;
+  /* content: url(../../Assets/logo_copier.svg) */
+  content: " ";
+  background-image: url('../../Assets/logo_linkedin.svg');
+  background-size: 28px 28px;
+  height: 28px;
+  width: 28px;
+  /* margin-left: 10px; */
+  margin: 10px 0px 0px 10px;
+  align-items: center;
+  justify-content: center;
 }
