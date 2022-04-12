@@ -211,6 +211,8 @@ textarea::placeholder {
   height: 100%;
 }
 
+/* TODO : Centrer le logo copier */
+/* Voir à faire une div englobante pour faire un flex */
 .contactNetworkLogoButtonName::after {
   display: inline-block;
   /* content: url(../../Assets/logo_copier.svg) */
