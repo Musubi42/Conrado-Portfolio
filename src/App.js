@@ -31,7 +31,7 @@ function App() {
         <Route path="/politique_de_confidentialite" element={<Privacy />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
