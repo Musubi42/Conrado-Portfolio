@@ -6,7 +6,7 @@
   height: 100px;
   background-color: #e8c135;
   position: absolute;
-  bottom: 0px;
+  /* bottom: 0px; */
   display: flex;
   align-items: center;
   font-family: "Red Hat Display", sans-serif;
