@@ -6,15 +6,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 
-  background-image: url('../../Assets/background-image_costard.png');
+  /* CSS import fonts from local font files */
+  
+  background-image: url('../../Assets/images/background-image_costard.png');
   /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../Assets/Costard_Cravatte.png'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
   width: 100%;
-  height: 100%;
+  height: 100vh;
 /*   
   /* Set rules to fill background 
   min-height: 100%;
@@ -38,6 +39,7 @@
 } */
 
 .quote {
+  color: rgb(red, green, blue);
   margin: 40px, 0, 20px, 0;
   font-family: 'Red Hat Display';
   font-style: normal;

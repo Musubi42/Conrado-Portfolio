@@ -1,6 +1,6 @@
 import React from "react";
 import "./contact.css";
-import logoConrado from "../../Assets/logo_conrado.svg";
+import logoConrado from "../../Assets/images/logo_conrado.svg";
 
 export default function Contact() {
   return (

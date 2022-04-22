@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./about.css";
-import imageConrado from "../../Assets/ricardo_milanos.png";
+import imageConrado from "../../Assets/images/ricardo_milanos.png";
 
 export default function About() {
   return (
