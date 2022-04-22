@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,QAAQ,CAAC;EACP,KAAK,ECHS,OAAO;CDItB",
+    "sources": [
+        "jfaq.scss",
+        "../../Styles/_colors.scss"
+    ],
+    "names": [],
+    "file": "jfaq.css"
+}
