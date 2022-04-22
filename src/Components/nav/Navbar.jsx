@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 // FIXME: Le CSS casse les liens, le css du footer fonctionne donc s'en inpirer
 import "./navbar.css";
-import logoConrado from "../../Assets/logo_conrado.svg";
+import logoConrado from "../../Assets/images/logo_conrado.svg";
 
 export default function Navbar() {
   return (
@@ -22,28 +22,45 @@ export default function Navbar() {
           </NavLink>
         </li>
         <li className="navbarItem">
-          <NavLink className="link" to="logo">
-            LOGO
-          </NavLink>
+          <span className="dropdown right">
+            CREATION <i></i>
+          </span>
+          <ul>
+            <li className="navbarItem">
+              <NavLink className="link" to="page_web">
+                PAGE WEB
+              </NavLink>
+            </li>
+            <li className="navbarItem">
+              <NavLink className="link" to="logos">
+                LOGOS
+              </NavLink>
+            </li>
+            <li className="navbarItem">
+              <NavLink className="link" to="mockups">
+                MOCKUPS
+              </NavLink>
+            </li>
+            <li className="navbarItem">
+              <NavLink className="link" to="banniere">
+                BANNIERE
+              </NavLink>
+            </li>
+          </ul>
         </li>
         <li className="navbarItem">
-          <NavLink className="link" to="mockup">
-            MOCKUPS
-          </NavLink>
-        </li>
-        <li className="navbarItem">
-          <NavLink className="link" to="page_web">
-            PAGE WEB
-          </NavLink>
-        </li>
-        <li className="navbarItem">
-          <NavLink className="link" to="a_propos">
-            A PROPOS
+          <NavLink className="link" to="temoignages">
+            TEMOIGNAGES
           </NavLink>
         </li>
         <li className="navbarItem">
           <NavLink className="link" to="contact">
             CONTACT
+          </NavLink>
+        </li>
+        <li className="navbarItem">
+          <NavLink className="link" to="a_propos">
+            A PROPOS
           </NavLink>
         </li>
       </ul>
