@@ -199,8 +199,12 @@ textarea::placeholder {
   background-repeat: no-repeat;  */
   box-shadow: 0px 10px 25px -5px rgba(242, 205, 70, 0.58);
   border-radius: 10px;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
+}
+
+.contactNetworkLogoButton svg {
+  color: #1b3461;
 }
 
 #contactLogoInstagram {
@@ -212,6 +216,7 @@ textarea::placeholder {
 }
 
 /* TODO : Centrer le logo copier */
+/* TODO : Voir à utiliser les logo copié et OK de FontAwesome */
 /* Voir à faire une div englobante pour faire un flex */
 .contactNetworkLogoButtonName::after {
   display: inline-block;

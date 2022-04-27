@@ -81,7 +81,7 @@ export default function Contact() {
                 />
                 <path
                   d="M57.4087 7.45283C65.2123 7.45283 71.5472 13.8097 71.5472 21.5913V57.3868C71.5472 65.1903 65.1903 71.5252 57.4087 71.5252H21.5913C13.7877 71.5252 7.45283 65.1684 7.45283 57.3868V21.5913C7.45283 13.8097 13.8097 7.45283 21.5913 7.45283H57.4087ZM57.4087 0H21.5913C9.66676 0 0 9.66676 0 21.5913V57.3868C0 69.3113 9.66676 78.9781 21.5913 78.9781H57.3868C69.3113 78.9781 78.9781 69.3113 78.9781 57.3868V21.5913C79 9.66676 69.3332 0 57.4087 0Z"
-                  fill="#1B3461"
+                  fill="currentColor"
                 />
                 <path
                   d="M39.4996 56.5538C48.9182 56.5538 56.5535 48.9186 56.5535 39.5C56.5535 30.0814 48.9182 22.4462 39.4996 22.4462C30.0811 22.4462 22.4458 30.0814 22.4458 39.5C22.4458 48.9186 30.0811 56.5538 39.4996 56.5538Z"
@@ -89,11 +89,11 @@ export default function Contact() {
                 />
                 <path
                   d="M39.4998 25.8657C47.0403 25.8657 53.156 31.9814 53.156 39.5219C53.156 47.0625 47.0403 53.1782 39.4998 53.1782C31.9593 53.1782 25.8436 47.0625 25.8436 39.5219C25.8436 31.9814 31.9593 25.8657 39.4998 25.8657ZM39.4998 19.0705C28.2329 19.0705 19.0703 28.2331 19.0703 39.5C19.0703 50.7669 28.2329 59.9515 39.5218 59.9515C50.8106 59.9515 59.9732 50.7889 59.9732 39.5C59.9732 28.2112 50.7668 19.0705 39.4998 19.0705Z"
-                  fill="#1B3461"
+                  fill="currentColor"
                 />
                 <path
                   d="M60.7627 23.4326C63.5713 23.4326 65.8482 21.1557 65.8482 18.3471C65.8482 15.5385 63.5713 13.2617 60.7627 13.2617C57.9541 13.2617 55.6772 15.5385 55.6772 18.3471C55.6772 21.1557 57.9541 23.4326 60.7627 23.4326Z"
-                  fill="#1B3461"
+                  fill="currentColor"
                 />
               </svg>
             </button>
@@ -101,8 +101,8 @@ export default function Contact() {
               @conrad_ception
             </span>
           </div>
-          <div className="contactNetworkContainerLogo">
-            <button className="contactNetworkLogo">
+          <div className="contactNetworkLogo">
+            <button className="contactNetworkLogoButton">
               {/* <img src="logLinkedin" alt="Linkedin" /> */}
               <svg
                 width="76"
@@ -126,12 +126,13 @@ export default function Contact() {
                 />
               </svg>
             </button>
-            <span className="contactNetworkButtonName">conrad.gonzalez</span>
-            span
+            <span className="contactNetworkLogoButtonName">
+              conrad.gonzalez
+            </span>
           </div>
 
-          <div className="contactNetworkContainerLogo">
-            <button className="contactNetworkLogo">
+          <div className="contactNetworkLogo">
+            <button className="contactNetworkLogoButton">
               {/* <img src="logoMail" alt="mail" /> */}
               <svg
                 width="82"
@@ -147,13 +148,13 @@ export default function Contact() {
                 />
               </svg>
             </button>
-            <span className="contactNetworkButtonName">
+            <span className="contactNetworkLogoButtonName">
               contact@conrad-edison.fr
             </span>
           </div>
 
-          <div className="contactNetworkContainerLogo">
-            <button className="contactNetworkLogo">
+          <div className="contactNetworkLogo">
+            <button className="contactNetworkLogoButton">
               {/* <img src="logoTel" alt="Téléphone" /> */}
               <svg
                 width="73"
@@ -180,7 +181,9 @@ export default function Contact() {
                 <path d=""></path>
               </svg> */}
             </button>
-            <span className="contactNetworkButtonName">(+33)3 33 33 33 33</span>
+            <span className="contactNetworkLogoButtonName">
+              (+33)3 33 33 33 33
+            </span>
           </div>
         </div>
       </div>
