@@ -24,12 +24,17 @@
 }
 
 .webPageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin: 30px;
 }
 
 .webPageItems {
-  width: 60vw;
+  flex: 1 0 auto;
+  width: 70vw;
   height: 70vh;
   margin: 50px;
-  background: red;
+  object-fit: contain;
 }
