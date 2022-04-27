@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 // FIXME: Le CSS casse les liens, le css du footer fonctionne donc s'en inpirer
-import "./navbar.css";
+import "./header.css";
 import logoConrado from "../../Assets/images/logo_conrado.svg";
 
 export default function Navbar() {
@@ -32,12 +32,12 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li className="navbarItem">
-              <NavLink className="link" to="logos">
+              <NavLink className="link" to="logo">
                 LOGOS
               </NavLink>
             </li>
             <li className="navbarItem">
-              <NavLink className="link" to="mockups">
+              <NavLink className="link" to="mockup">
                 MOCKUPS
               </NavLink>
             </li>
@@ -49,7 +49,7 @@ export default function Navbar() {
           </ul>
         </li>
         <li className="navbarItem">
-          <NavLink className="link" to="temoignages">
+          <NavLink className="link" to="temoignage">
             TEMOIGNAGES
           </NavLink>
         </li>

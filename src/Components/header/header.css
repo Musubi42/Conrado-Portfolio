@@ -1,37 +1,40 @@
-.header {
+.navbar {
   width: 100%;
-  height: 100px;
+  height: 150px;
   background-color: #1b3461;
   position: sticky;
   top: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
 }
 
-.accueil {
+.navbarAccueil {
   position: absolute;
   left: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  right: 20px;
+  /* right: 20px; */
   margin-right: 10px;
   cursor: pointer;
 }
 
-.logo {
+.navbarLogo {
   /* width: 40px; */
   height: 70px;
 }
 
-.containerHeaderLogoName {
+.navbarContainerLogoName {
   display: flex;
   flex-direction: column;
   margin: 0px 10px 0px 10px;
 }
 
-.headerLogoName {
+.navbarLogoName {
   /* display: flex; */
   font-family: 'Red Hat Display';
   font-style: normal;
@@ -44,7 +47,7 @@
   color: #E8C135;
 }
 
-.headerList {
+.navbarList {
   display: flex;
   justify-content: center;
   margin: 0;
@@ -52,15 +55,50 @@
   list-style: none;
 }
 
-.headerItem {
+.navbarItem {
   margin-right: 5vw;
   font-size: 1.1rem;
   color: #e8c135;
   font-weight: 300;
   cursor: pointer;
-  text-decoration: none;
+  /* text-decoration: none; */
 
-  font-family: "Red Hat Display", sans-serif;
-  font-style: normal;
   font-weight: 700;
+}
+
+/* i::before {
+  content: url("../../Assets/angle-down-solid.svg"); 
+  content: "\f107";
+  display: inline-block;
+  width: 10px;
+  color: red;
+  font-weight: 900;
+} */
+
+i::before {
+  content: "\f107";
+  display: inline-block;
+  width: 10px;
+  color: red;
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 Free";
+}
+
+i {
+  font-size: 1.5rem;
+  color: #e8c135;
+  font-weight: 300;
+  cursor: pointer;
+  text-decoration: none; 
+
+  font-weight: 700;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
