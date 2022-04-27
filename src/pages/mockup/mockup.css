@@ -2,18 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #bfbfbf;
 }
 
-.mockupTitles {
+.mockupTitle {
   font-family: 'Red Hat Display';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   line-height: 64px;
 
   display: flex;
@@ -23,6 +22,8 @@
 }
 
 .mockupContainer {
+  display: flex;
+  align-items: center;
   margin: 30px;
 }
 
@@ -31,4 +32,26 @@
   height: 40vh;
   margin: 50px;
   background: red;
+}
+
+.mockupMaintenance {
+  /* display: flex;
+  align-items: center; */
+  background: #E8C135;  
+}
+
+.mockupMaintenance > p {
+  padding: 20px;
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 42px;
+  /* line-height: 85px; */
+
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.12em;
+
+  color: #1B3461;
 }
