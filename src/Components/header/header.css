@@ -1,6 +1,6 @@
 .navbar {
   width: 100%;
-  height: 150px;
+  height: 100px;
   background-color: #1b3461;
   position: sticky;
   top: 0;
@@ -58,12 +58,18 @@
 .navbarItem {
   margin-right: 5vw;
   font-size: 1.1rem;
-  color: #e8c135;
+  color: rgb(232, 193, 53 );
   font-weight: 300;
   cursor: pointer;
   /* text-decoration: none; */
 
   font-weight: 700;
+
+  position: relative;
+}
+
+.navbarItem:hover {
+  color: rgb(232, 193, 53, 0.5);
 }
 
 /* i::before {
@@ -89,7 +95,8 @@ i::before {
 }
 
 i {
-  font-size: 1.5rem;
+  /* La font-size nique la mise en forme */
+  /* font-size: 1.5rem; */
   color: #e8c135;
   font-weight: 300;
   cursor: pointer;
@@ -102,3 +109,40 @@ i {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute; 
+  padding-left: 0;
+  left: 0;
+  display: none;
+  background: #1b3461;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  /* min-width: 250px; */
+  text-align: left;
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px #ccc;
+}
+
+.dropdown-menu {
+}
+
+.dropdownItem {
+  list-style: none;
+}
+
+/*
+.dropdown-menu:hover {
+
+}
+
+.dropdown-menu:hover .dropdownItem {
+  display: block;
+} */
