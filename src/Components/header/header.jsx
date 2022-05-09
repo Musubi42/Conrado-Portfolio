@@ -25,23 +25,23 @@ export default function Navbar() {
           <span className="dropdown right">
             CREATION <i></i>
           </span>
-          <ul>
-            <li className="navbarItem">
+          <ul className="dropdown-menu">
+            <li className="navbarItem dropdownItem">
               <NavLink className="link" to="page_web">
                 PAGE WEB
               </NavLink>
             </li>
-            <li className="navbarItem">
+            <li className="navbarItem dropdownItem">
               <NavLink className="link" to="logo">
                 LOGOS
               </NavLink>
             </li>
-            <li className="navbarItem">
+            <li className="navbarItem dropdownItem">
               <NavLink className="link" to="mockup">
                 MOCKUPS
               </NavLink>
             </li>
-            <li className="navbarItem">
+            <li className="navbarItem dropdownItem">
               <NavLink className="link" to="banniere">
                 BANNIERE
               </NavLink>
