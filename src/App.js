@@ -20,7 +20,7 @@ function App() {
     <>
       {/* TODO : Change style when clicked */}
       <Header />
-      <Routes>
+      <Routes basename="/conrad-edison">
         <Route path="/" element={<Home />} />
         <Route exact path="/accueil" element={<Home />} />
         <Route path="/page_web" element={<WebPage />} />
