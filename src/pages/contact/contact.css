@@ -163,7 +163,7 @@ textarea::placeholder {
 .contactNetwork {
   display: flex;
   flex-direction: column;
-
+  margin-bottom: 50px;
 }
 
 .contactNetworkTitle {
@@ -222,10 +222,12 @@ textarea::placeholder {
   display: inline-block;
   /* content: url(../../Assets/logo_copier.svg) */
   content: " ";
-  background-image: url('../../Assets/images/logo_linkedin.svg');
-  background-size: 28px 28px;
-  height: 28px;
-  width: 28px;
+  /* background-image: url('../../Assets/images/logo_mail.svg'); */
+  background-image: url('../../Assets/copy.svg');
+  /* background-size: 28px 28px; */
+  height: 19px;
+  width: 19px;
+  cursor: pointer;
   /* margin-left: 10px; */
   margin: 10px 0px 0px 10px;
   align-items: center;
