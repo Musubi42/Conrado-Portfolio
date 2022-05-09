@@ -127,6 +127,7 @@
 // });
 
 if (window.location.href === "https://conrad-edison/contact") {
+  console.log("hi");
   const networkButton = {
     BUTTON_INSTAGRAM: document.getElementById("buttonInstagram"),
     BUTTON_LINKEDIN: document.getElementById("buttonLinkedin"),
