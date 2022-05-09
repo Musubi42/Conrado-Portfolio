@@ -13,9 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
     REFERENCE_TELE: document.getElementById("referenceTel"),
   };
 
-  networkButton.BUTTON_INSTAGRAM.addEventListener("click", function () {
-    window.open("https://www.instagram.com/julien.boulet/", "_blank");
-  });
+  document
+    .getElementById("buttonInstagram")
+    .addEventListener("click", function () {
+      window.open("https://www.instagram.com/julien.boulet/", "_blank");
+    });
 
   networkButton.BUTTON_LINKEDIN.addEventListener("click", function () {
     window.open(
