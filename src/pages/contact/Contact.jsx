@@ -61,13 +61,7 @@ export default function Contact() {
         <h1 className="contactNetworkTitle">MES RESEAUX</h1>
         <div className="contactNetworkContainerLogos">
           <div className="contactNetworkLogo">
-            {/* TODO : Ajouter le svg copier de Github et faire leur animation flèche verte */}
             <button className="contactNetworkLogoButton" id="buttonInstagram">
-              {/* <img
-                src="logoInstagram"
-                alt="Instagram"
-                id="contactLogoInstagram"
-              /> */}
               <svg
                 width="79"
                 height="79"
@@ -113,7 +107,6 @@ export default function Contact() {
           </div>
           <div className="contactNetworkLogo">
             <button className="contactNetworkLogoButton" id="buttonLinkedin">
-              {/* <img src="logLinkedin" alt="Linkedin" /> */}
               <svg
                 width="76"
                 height="73"
@@ -152,7 +145,6 @@ export default function Contact() {
 
           <div className="contactNetworkLogo">
             <button className="contactNetworkLogoButton" id="buttonMail">
-              {/* <img src="logoMail" alt="mail" /> */}
               <svg
                 width="82"
                 height="62"
@@ -180,7 +172,6 @@ export default function Contact() {
 
           <div className="contactNetworkLogo">
             <button className="contactNetworkLogoButton">
-              {/* <img src="logoTel" alt="Téléphone" /> */}
               <svg
                 width="73"
                 height="75"
