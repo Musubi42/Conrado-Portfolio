@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import "./contact.css";
 import "../../Scripts/contact";
-import script from "../../Scripts/contact";
+// import script from "../../Scripts/contact";
 import logoConrado from "../../Assets/images/logo_conrado.svg";
 
 // import { Helmet } from "react-helmet";
@@ -12,7 +12,7 @@ export default function Contact() {
   return (
     <div className="contactMain">
       <Helmet>
-        <script src="{script}" type="text/javascript" />
+        <script src="../../Scripts/contact" type="text/javascript" />
       </Helmet>
       <div className="contactDivContact">
         <h1 className="contactTitleContact">CONTACTEZ MOI</h1>
