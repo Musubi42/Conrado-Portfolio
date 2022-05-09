@@ -1,6 +1,13 @@
 import React from "react";
 import "./contact.css";
+import "../../Scripts/contact";
+import "../../Scripts/general";
+// import useimportScript from "../../Hooks/importScript";
 import logoConrado from "../../Assets/images/logo_conrado.svg";
+
+// const Demo = (props) => {
+//   useimportScript("../../Scripts/contact.js");
+// };
 
 export default function Contact() {
   return (
@@ -61,7 +68,7 @@ export default function Contact() {
         <div className="contactNetworkContainerLogos">
           <div className="contactNetworkLogo">
             {/* TODO : Ajouter le svg copier de Github et faire leur animation flèche verte */}
-            <button className="contactNetworkLogoButton">
+            <button className="contactNetworkLogoButton buttonInstagram">
               {/* <img
                 src="logoInstagram"
                 alt="Instagram"
@@ -176,10 +183,6 @@ export default function Contact() {
                   </clipPath>
                 </defs>
               </svg>
-              {/* <svg class="" width="" height="" role="img">
-                <title>Téléphone</title>
-                <path d=""></path>
-              </svg> */}
             </button>
             <span className="contactNetworkLogoButtonName">
               (+33)3 33 33 33 33
