@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     BUTTON_INSTAGRAM: document.getElementById("buttonInstagram"),
     BUTTON_LINKEDIN: document.getElementById("buttonLinkedin"),
     BUTTON_MAIL: document.getElementById("buttonMail"),
-    BUTTON_TEL: document.getElementById("buttonTel"),
   };
 
   const networkReferences = {
@@ -119,3 +118,9 @@ document.addEventListener("DOMContentLoaded", () => {
       );
   });
 });
+
+// do {
+//   console.log("hi");
+// } while (!document.getElementById("buttonInstagram"));
+
+console.log("no");
