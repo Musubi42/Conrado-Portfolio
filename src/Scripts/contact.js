@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   networkButton.BUTTON_INSTAGRAM.addEventListener("click", function () {
-    // console.log("hhe");
     window.open("https://www.instagram.com/julien.boulet/", "_blank");
   });
 
@@ -118,5 +117,3 @@ document.addEventListener("DOMContentLoaded", () => {
       );
   });
 });
-
-console.log(document.getElementById("buttonInstagram"));
