@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.onreadystatechange = function () {
-    if (document.readyState === "complete") {
+    if (document.readyState === "interactive") {
+      console.log("non");
+    } else if (document.readyState === "complete") {
+      // Do something when the page is fully loaded
+      console.log("hi");
       const networkButton = {
         BUTTON_INSTAGRAM: document.getElementById("buttonInstagram"),
         BUTTON_LINKEDIN: document.getElementById("buttonLinkedin"),
@@ -112,9 +116,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
           );
       });
-    } else if (document.readyState === "complete") {
-      // Do something when the page is fully loaded
-      console.log("hi");
     }
   };
 });
