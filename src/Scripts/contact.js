@@ -5,7 +5,7 @@ window.onload = function () {
 
   var observer = new MutationObserver(function (mutations) {
     mutations.forEach(function (mutation) {
-      if (oldHref != document.location.href) {
+      if (oldHref !== document.location.href) {
         oldHref = document.location.href;
         console.log("changed");
 
