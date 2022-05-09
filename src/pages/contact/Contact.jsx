@@ -1,13 +1,7 @@
 import React from "react";
 import "./contact.css";
 import "../../Scripts/contact";
-import "../../Scripts/general";
-// import useimportScript from "../../Hooks/importScript";
 import logoConrado from "../../Assets/images/logo_conrado.svg";
-
-// const Demo = (props) => {
-//   useimportScript("../../Scripts/contact.js");
-// };
 
 export default function Contact() {
   return (
@@ -68,7 +62,7 @@ export default function Contact() {
         <div className="contactNetworkContainerLogos">
           <div className="contactNetworkLogo">
             {/* TODO : Ajouter le svg copier de Github et faire leur animation flèche verte */}
-            <button className="contactNetworkLogoButton buttonInstagram">
+            <button className="contactNetworkLogoButton" id="buttonInstagram">
               {/* <img
                 src="logoInstagram"
                 alt="Instagram"
@@ -104,12 +98,15 @@ export default function Contact() {
                 />
               </svg>
             </button>
-            <span className="contactNetworkLogoButtonName">
+            <span
+              className="contactNetworkLogoButtonName"
+              id="referenceInstagram"
+            >
               @conrad_ception
             </span>
           </div>
           <div className="contactNetworkLogo">
-            <button className="contactNetworkLogoButton">
+            <button className="contactNetworkLogoButton" id="buttonLinkedin">
               {/* <img src="logLinkedin" alt="Linkedin" /> */}
               <svg
                 width="76"
@@ -133,13 +130,16 @@ export default function Contact() {
                 />
               </svg>
             </button>
-            <span className="contactNetworkLogoButtonName">
+            <span
+              className="contactNetworkLogoButtonName"
+              id="referenceLinkedin"
+            >
               conrad.gonzalez
             </span>
           </div>
 
           <div className="contactNetworkLogo">
-            <button className="contactNetworkLogoButton">
+            <button className="contactNetworkLogoButton" id="buttonMail">
               {/* <img src="logoMail" alt="mail" /> */}
               <svg
                 width="82"
@@ -155,7 +155,7 @@ export default function Contact() {
                 />
               </svg>
             </button>
-            <span className="contactNetworkLogoButtonName">
+            <span className="contactNetworkLogoButtonName" id="referenceMail">
               contact@conrad-edison.fr
             </span>
           </div>
@@ -184,7 +184,7 @@ export default function Contact() {
                 </defs>
               </svg>
             </button>
-            <span className="contactNetworkLogoButtonName">
+            <span className="contactNetworkLogoButtonName" id="referenceTel">
               (+33)3 33 33 33 33
             </span>
           </div>
