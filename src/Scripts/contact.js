@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("non");
     } else if (document.readyState === "complete") {
       // Do something when the page is fully loaded
+      console.log(window.location.href);
       console.log("hi");
       const networkButton = {
         BUTTON_INSTAGRAM: document.getElementById("buttonInstagram"),
