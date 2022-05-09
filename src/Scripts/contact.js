@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.onreadystatechange = function () {
-    if (document.readyState === "interactive") {
+    if (
+      document.readyState === "interactive" &&
+      window.location.href === "https://conrad-edison/contact"
+    ) {
       console.log("non");
     } else if (document.readyState === "complete") {
       // Do something when the page is fully loaded
