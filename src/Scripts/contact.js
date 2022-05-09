@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("readystatechange", () => {
   const networkButton = {
     BUTTON_INSTAGRAM: document.getElementById("buttonInstagram"),
     BUTTON_LINKEDIN: document.getElementById("buttonLinkedin"),
@@ -12,11 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
     REFERENCE_TELE: document.getElementById("referenceTel"),
   };
 
-  document
-    .getElementById("buttonInstagram")
-    .addEventListener("click", function () {
-      window.open("https://www.instagram.com/julien.boulet/", "_blank");
-    });
+  networkButton.BUTTON_INSTAGRAM.addEventListener("click", function () {
+    window.open("https://www.instagram.com/julien.boulet/", "_blank");
+  });
 
   networkButton.BUTTON_LINKEDIN.addEventListener("click", function () {
     window.open(
