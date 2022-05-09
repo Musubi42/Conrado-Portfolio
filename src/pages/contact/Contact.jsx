@@ -103,6 +103,12 @@ export default function Contact() {
               id="referenceInstagram"
             >
               @conrad_ception
+              <i className="fa-solid fa-check displayNone">
+                <label htmlFor="text">COPIÉ</label>
+              </i>
+              <i className="fa-solid fa-clone displayActive">
+                <label htmlFor="text">COPIER</label>
+              </i>
             </span>
           </div>
           <div className="contactNetworkLogo">
@@ -135,6 +141,12 @@ export default function Contact() {
               id="referenceLinkedin"
             >
               conrad.gonzalez
+              <i className="fa-solid fa-check displayNone">
+                <label htmlFor="text">COPIÉ</label>
+              </i>
+              <i className="fa-solid fa-clone displayActive">
+                <label htmlFor="text">COPIER</label>
+              </i>
             </span>
           </div>
 
@@ -157,6 +169,12 @@ export default function Contact() {
             </button>
             <span className="contactNetworkLogoButtonName" id="referenceMail">
               contact@conrad-edison.fr
+              <i className="fa-solid fa-check displayNone">
+                <label htmlFor="text">COPIÉ</label>
+              </i>
+              <i className="fa-solid fa-clone displayActive">
+                <label htmlFor="text">COPIER</label>
+              </i>
             </span>
           </div>
 
@@ -171,12 +189,10 @@ export default function Contact() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <title>Téléphone</title>
-                <g clip-path="url(#clip0_123_401)">
-                  <path
-                    d="M72.7522 61.0489C70.7564 63.2734 64.7835 69.5198 56.7129 74.2045C47.6808 79.4491 25.0859 57.3365 20.8612 53.0643C20.8029 53.0201 20.7446 52.9759 20.7009 52.9317C16.6219 48.5416 -4.57448 25.0148 0.888505 16.043C5.76877 8.0289 12.1204 2.18034 14.3784 0.221003C14.8155 -0.162026 15.4856 -0.0441708 15.7915 0.441981L26.3096 17.8551C26.5427 18.2381 26.4698 18.7537 26.1348 19.0631C20.8029 23.8951 20.395 24.2782 20.395 24.2782C16.0246 28.2558 26.1202 42.0006 28.553 45.1827C28.5676 45.2122 28.5822 45.2269 28.5967 45.2564C28.6405 45.2858 28.6842 45.3153 28.7279 45.3447C31.7871 47.8934 45.0731 58.5298 49.1376 54.2281C49.1376 54.2281 49.5163 53.8303 54.4694 48.5858C54.7754 48.2617 55.2852 48.188 55.664 48.4384L72.5628 59.6052C73.0581 59.9293 73.1455 60.607 72.7522 61.0489Z"
-                    fill="#1B3461"
-                  />
-                </g>
+                <path
+                  d="M72.7522 61.0489C70.7564 63.2734 64.7835 69.5198 56.7129 74.2045C47.6808 79.4491 25.0859 57.3365 20.8612 53.0643C20.8029 53.0201 20.7446 52.9759 20.7009 52.9317C16.6219 48.5416 -4.57448 25.0148 0.888505 16.043C5.76877 8.0289 12.1204 2.18034 14.3784 0.221003C14.8155 -0.162026 15.4856 -0.0441708 15.7915 0.441981L26.3096 17.8551C26.5427 18.2381 26.4698 18.7537 26.1348 19.0631C20.8029 23.8951 20.395 24.2782 20.395 24.2782C16.0246 28.2558 26.1202 42.0006 28.553 45.1827C28.5676 45.2122 28.5822 45.2269 28.5967 45.2564C28.6405 45.2858 28.6842 45.3153 28.7279 45.3447C31.7871 47.8934 45.0731 58.5298 49.1376 54.2281C49.1376 54.2281 49.5163 53.8303 54.4694 48.5858C54.7754 48.2617 55.2852 48.188 55.664 48.4384L72.5628 59.6052C73.0581 59.9293 73.1455 60.607 72.7522 61.0489Z"
+                  fill="#1B3461"
+                />
                 <defs>
                   <clipPath id="clip0_123_401">
                     <rect width="73" height="75" fill="white" />
@@ -186,6 +202,12 @@ export default function Contact() {
             </button>
             <span className="contactNetworkLogoButtonName" id="referenceTel">
               (+33)3 33 33 33 33
+              <i className="fa-solid fa-check displayNone">
+                <label htmlFor="text">COPIÉ</label>
+              </i>
+              <i className="fa-solid fa-clone displayActive">
+                <label htmlFor="text">COPIER</label>
+              </i>
             </span>
           </div>
         </div>

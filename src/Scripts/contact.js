@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ARRAY_LOGOS[1].classList.add("displayActive");
     ARRAY_LOGOS[1].classList.remove("displayNone");
     // Logo copié
-    ARRAY_LOGOS[2].classList.remove("displayActive");
-    ARRAY_LOGOS[2].classList.add("displayNone");
+    ARRAY_LOGOS[0].classList.remove("displayActive");
+    ARRAY_LOGOS[0].classList.add("displayNone");
   };
 
   const displayCopied = function (element) {
@@ -46,17 +46,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // L'emplacement de la classe display est :
     // 1: displayNone/displayActive
+    // console.log(element.nextSibling.c);
     const ARRAY_LOGOS = element.originalTarget.parentElement.children;
-    if (ARRAY_LOGOS[1].classList[1] === "displayActive") {
+    if (ARRAY_LOGOS[1].classList[2] === "displayActive") {
       // Logo Copier
       ARRAY_LOGOS[1].classList.remove("displayActive");
       ARRAY_LOGOS[1].classList.add("displayNone");
       // Logo copié
-      ARRAY_LOGOS[2].classList.add("displayActive");
-      ARRAY_LOGOS[2].classList.remove("displayNone");
+      ARRAY_LOGOS[0].classList.add("displayActive");
+      ARRAY_LOGOS[0].classList.remove("displayNone");
       window.setTimeout(function () {
         toggleClass(ARRAY_LOGOS);
       }, 1000);
+    } else {
     }
   };
 
@@ -65,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "click",
     function (el) {
       navigator.clipboard
-        .writeText(networkReferences.REFERENCE_INSTAGRAM.children[0].innerHTML)
+        .writeText(networkReferences.REFERENCE_INSTAGRAM.innerHTML)
         .then(
           function () {
             displayCopied(el);
@@ -79,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   networkReferences.REFERENCE_LINKEDIN.addEventListener("click", function (el) {
     navigator.clipboard
-      .writeText(networkReferences.REFERENCE_LINKEDIN.children[0].innerHTML)
+      .writeText(networkReferences.REFERENCE_LINKEDIN.innerHTML)
       .then(
         function () {
           displayCopied(el);
@@ -92,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   networkReferences.REFERENCE_MAIL.addEventListener("click", function (el) {
     navigator.clipboard
-      .writeText(networkReferences.REFERENCE_MAIL.children[0].innerHTML)
+      .writeText(networkReferences.REFERENCE_MAIL.innerHTML)
       .then(
         function () {
           displayCopied(el);
@@ -105,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   networkReferences.REFERENCE_TELE.addEventListener("click", function (el) {
     navigator.clipboard
-      .writeText(networkReferences.REFERENCE_TELE.children[0].innerHTML)
+      .writeText(networkReferences.REFERENCE_TELE.innerHTML)
       .then(
         function () {
           displayCopied(el);
@@ -116,3 +118,5 @@ document.addEventListener("DOMContentLoaded", () => {
       );
   });
 });
+
+console.log(document.getElementById("buttonInstagram"));
