@@ -38,14 +38,7 @@ document.addEventListener("readystatechange", () => {
   };
 
   const displayCopied = function (element) {
-    // L'emplacement des logos est :
-    // 1: copier
-    // 2: active
-
-    // L'emplacement de la classe display est :
-    // 1: displayNone/displayActive
-    // console.log(element.nextSibling.c);
-    const ARRAY_LOGOS = element.originalTarget.parentElement.children;
+    const ARRAY_LOGOS = element.target.parentElement.children;
     if (ARRAY_LOGOS[1].classList[2] === "displayActive") {
       // Logo Copier
       ARRAY_LOGOS[1].classList.remove("displayActive");
@@ -56,7 +49,6 @@ document.addEventListener("readystatechange", () => {
       window.setTimeout(function () {
         toggleClass(ARRAY_LOGOS);
       }, 1000);
-    } else {
     }
   };
 
@@ -64,61 +56,47 @@ document.addEventListener("readystatechange", () => {
   networkReferences.REFERENCE_INSTAGRAM.addEventListener(
     "click",
     function (el) {
-      navigator.clipboard
-        .writeText(networkReferences.REFERENCE_INSTAGRAM.innerHTML)
-        .then(
-          function () {
-            displayCopied(el);
-          },
-          function (err) {
-            console.error("Could not copy text: ", err);
-          }
-        );
+      navigator.clipboard.writeText(el.path[1].childNodes[0].textContent).then(
+        function () {
+          displayCopied(el);
+        },
+        function (err) {
+          console.error("Could not copy text: ", err);
+        }
+      );
     }
   );
 
   networkReferences.REFERENCE_LINKEDIN.addEventListener("click", function (el) {
-    navigator.clipboard
-      .writeText(networkReferences.REFERENCE_LINKEDIN.innerHTML)
-      .then(
-        function () {
-          displayCopied(el);
-        },
-        function (err) {
-          console.error("Could not copy text: ", err);
-        }
-      );
+    navigator.clipboard.writeText(el.path[1].childNodes[0].textContent).then(
+      function () {
+        displayCopied(el);
+      },
+      function (err) {
+        console.error("Could not copy text: ", err);
+      }
+    );
   });
 
   networkReferences.REFERENCE_MAIL.addEventListener("click", function (el) {
-    navigator.clipboard
-      .writeText(networkReferences.REFERENCE_MAIL.innerHTML)
-      .then(
-        function () {
-          displayCopied(el);
-        },
-        function (err) {
-          console.error("Could not copy text: ", err);
-        }
-      );
+    navigator.clipboard.writeText(el.path[1].childNodes[0].textContent).then(
+      function () {
+        displayCopied(el);
+      },
+      function (err) {
+        console.error("Could not copy text: ", err);
+      }
+    );
   });
 
   networkReferences.REFERENCE_TELE.addEventListener("click", function (el) {
-    navigator.clipboard
-      .writeText(networkReferences.REFERENCE_TELE.innerHTML)
-      .then(
-        function () {
-          displayCopied(el);
-        },
-        function (err) {
-          console.error("Could not copy text: ", err);
-        }
-      );
+    navigator.clipboard.writeText(el.path[1].childNodes[0].textContent).then(
+      function () {
+        displayCopied(el);
+      },
+      function (err) {
+        console.error("Could not copy text: ", err);
+      }
+    );
   });
 });
-
-// do {
-//   console.log("hi");
-// } while (!document.getElementById("buttonInstagram"));
-
-console.log("no");
