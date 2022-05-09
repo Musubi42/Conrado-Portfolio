@@ -12,7 +12,7 @@ export default function Contact() {
   return (
     <div className="contactMain">
       <Helmet>
-        <script src="./static/js/*" type="text/javascript" />
+        <script src="./static/js/" type="text/javascript" />
       </Helmet>
       <div className="contactDivContact">
         <h1 className="contactTitleContact">CONTACTEZ MOI</h1>
