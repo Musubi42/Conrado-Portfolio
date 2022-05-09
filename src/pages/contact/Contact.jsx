@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import "./contact.css";
 import "../../Scripts/contact";
 // import script from "../../Scripts/contact";
@@ -8,12 +8,19 @@ import logoConrado from "../../Assets/images/logo_conrado.svg";
 // import { Helmet } from "react-helmet";
 // const Demo = (props) => <div className="application">...</div>;
 
+// const componentDidMount = () => {
+//   const script = document.createElement("script");
+//   script.src = "../../Scripts/contact.js";
+//   script.type = "text/html";
+//   script.defer = true;
+
+//   document.body.appendChild(script);
+//   script.onload = () => this.scriptToExecute();
+// };
+
 export default function Contact() {
   return (
     <div className="contactMain">
-      <Helmet>
-        <script src="./static/js/" type="text/javascript" />
-      </Helmet>
       <div className="contactDivContact">
         <h1 className="contactTitleContact">CONTACTEZ MOI</h1>
         <div className="contactDivForm">
@@ -211,6 +218,9 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <script src="../../Scripts/contact.js" defer />
     </div>
   );
 }
+
+// componentDidMount();
