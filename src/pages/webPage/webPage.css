@@ -1,0 +1,40 @@
+.webPageMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #bfbfbf;
+}
+
+.webPageTitle {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 64px;
+
+  display: flex;
+  align-items: center;
+  margin: 30px;
+  color: #1b3461;
+}
+
+.webPageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.webPageItems {
+  flex: 1 0 auto;
+  width: 70vw;
+  height: 70vh;
+  margin: 50px;
+  object-fit: contain;
+}

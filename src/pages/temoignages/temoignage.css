@@ -1,0 +1,41 @@
+.temoignageMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: #bfbfbf;
+}
+
+.temoignageTitle {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 64px;
+
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  margin: 30px;
+
+  color: #1B3461;
+}
+
+.temoignageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  margin: 30px;
+}
+
+.temoignageItem {
+  flex: 1 0 auto;
+  width: 70vw;
+  margin-bottom: 50px;
+  object-fit: contain;
+}

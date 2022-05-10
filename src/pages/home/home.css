@@ -1,0 +1,73 @@
+.home {
+}
+
+.homeBGI {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* CSS import fonts from local font files */
+
+  
+  background-image: url('../../Assets/images/background-image_costard.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  width: 100%;
+  height: 100%;
+}
+
+/* @media screen and (max-width: 1024px) { /* Specific to this particular image 
+  .homeBGI {
+    left: 50%;
+    margin-left: -512px;   /* 50% 
+  }
+} */
+
+.homeQuote {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 10vh 0px 0px 0px;
+  max-width: 60vw;
+  color: #FFFFFF;
+}
+
+.homeText {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 7vh 0 0 0;
+  max-width: 60vw;
+  color: #FFFFFF;
+}
+
+.homeContact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 12vh 0 7vh 0;
+  padding: 15px;
+  background: #1B3461;
+  border: none;
+  max-width: 50vw;
+
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: white;
+}
+

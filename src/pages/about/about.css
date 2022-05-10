@@ -1,0 +1,61 @@
+.aboutMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: #bfbfbf;
+}
+
+.aboutTitle {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  font-style: 2.5rem;
+  line-height: 64px;
+
+  display: flex;
+  align-items: center;
+  margin: 30px;
+  color: #1b3461;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutPresentation {
+  width: 35vw;
+  /* height: 40vh; */
+  margin: 50px;
+  border-radius: 10px;
+  background: #E8C135;
+}
+
+.aboutTextPrensetation {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 15px;
+  /* display: flex; */
+  align-items: center;
+  letter-spacing: 0.12rem;
+}
+
+.aboutTextPrensetation:nth-child(1) {
+  margin-top: 60px;
+}
+
+.aboutTextPrensetation:nth-last-child(1) {
+  margin-bottom: 60px;
+}
+
+.aboutImagePrensetation {
+  border-radius: 50%;
+}
