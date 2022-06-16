@@ -37,3 +37,11 @@ jobs:
       # Mv la command a permis de la mettre à jour
       - name: Move the Build to /var/www/conrado/portfolio/front
         run: bash /home/debian/.local/bin/CD_Conrado_Portfolio_FrontEnd.sh
+        
+      - uses: mr-smithers-excellent/docker-build-push@v5
+        name: Build & push Docker image
+        with:
+          image: musubi42/test
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
