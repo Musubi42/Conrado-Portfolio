@@ -111,67 +111,67 @@
     </header>
 
 
-    <section class="py-20">
+    <section class="py-20 mx-10">
         <div class="container px-4 mx-auto">
-            <div class="max-w-2xl lg:max-w-3xl mx-auto">
-                <div class="mb-12 text-center">
-                    <h2 class="text-4xl font-bold text-color-primary font-heading">CONTACT</h2>
-                </div>
+            <div class="mb-12 text-center">
+                <h2 class="text-4xl font-bold text-color-primary font-heading">CONTACT</h2>
+            </div>
 
-                <div>
-                    <form class="bg-test bg-contain">
-                        <div class="flex flex-wrap mb-4 -mx-3">
-                            <h3>CONTACTEZ MOI</h3>
+            <div>
+                <form class="w-full p-10 pb-18 lg:bg-formContact bg-contain rounded-xl">
+                    <div class="flex flex-row mb-4 -mx-3">
+                        <!-- <h3>CONTACTEZ MOI</h3> -->
 
-                            <!-- Image -->
-                            <div class="hidden lg:w-5/12">
+                        <!-- Image -->
+                        <div class="w-0 h-max lg:w-3/12 lg:mx-32 lg:my-8">
+                            <svg class="w-full h-1/2" width="512" height="789" viewBox="0 0 512 789" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M329.851 687.376H180.677V788.619H329.851V687.376Z" fill="white" />
+                                <path
+                                    d="M511.012 256.286C511.153 292.912 503.458 329.143 488.442 362.549C473.426 395.954 451.438 425.761 423.953 449.969C417.199 455.9 410.147 461.483 402.824 466.696C396.611 471.255 391.588 477.245 388.182 484.159C384.777 491.073 383.088 498.705 383.26 506.41V586.231H329.949V257.167L255.313 127.948L180.677 257.167V586.231H127.463V506.41C127.635 498.705 125.947 491.073 122.541 484.159C119.135 477.245 114.113 471.255 107.899 466.696C100.524 461.51 93.4382 455.926 86.6722 449.969C47.7182 415.449 20.1463 369.929 7.59505 319.416C-4.9562 268.903 -1.89687 215.772 16.3693 167.034C34.6355 118.296 67.25 76.2419 109.909 46.421C152.568 16.6002 203.266 0.414568 255.313 0C323.04 0.614634 387.81 27.832 435.647 75.7789C483.484 123.726 510.553 188.558 511.012 256.286Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
 
-                            </div>
-
+                        <div class="w-full lg:grid lg:h-4/6 grid-cols-2 grid-rows-5 gap-x-11">
                             <!-- Name, Mail, Tel -->
-                            <div class="w-full lg:w-1/2 px-3 mb-4 lg:mb-0">
-                                <div class="mb-4">
-                                    <input
-                                        class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
-                                        type="text" placeholder="Subject">
-                                </div>
-                                <div class="mb-4">
-                                    <input
-                                        class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
-                                        type="text" placeholder="Name">
-                                </div>
-                                <div class="mb-4">
-                                    <input
-                                        class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
-                                        type="email" placeholder="name@example.com">
-                                </div>
-                            </div>
+                            <input
+                                class="w-full col-span-1 row-start-1 row-end-1 mb-4 lg:mb-0 px-4 text-xs font-semibold leading-none bg-stone-100 rounded outline-none"
+                                type="text" placeholder="Nom" required>
+
+                            <input
+                                class="w-full col-span-1 row-start-3 row-end-3 mb-4 lg:mb-0 px-4 text-xs font-semibold leading-none bg-stone-100 rounded outline-none"
+                                type="email" placeholder="Mail" required>
+                            <input
+                                class="w-full col-span-1 row-start-5 row-end-5 mb-4 lg:mb-0 px-4 text-xs font-semibold leading-none bg-stone-100 rounded outline-none"
+                                type="tel" placeholder="Téléphone">
 
                             <!-- Subject, Text -->
-                            <div class="w-full lg:w-1/2 px-3">
-                                <textarea
-                                    class="w-full h-full p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none"
-                                    type="text" placeholder="Message..."></textarea>
-                            </div>
-                            <div class="w-full lg:w-1/2 px-3">
-                                <textarea
-                                    class="w-full h-full p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none"
-                                    type="text" placeholder="Message..."></textarea>
-                            </div>
+                            <input
+                                class="w-full col-span-2 row-start-1 row-end-1 mb-4 lg:mb-0 px-4 text-xs font-semibold leading-none resize-none bg-stone-100 rounded outline-none"
+                                type="text" placeholder="Sujet"></input>
 
+                            <div class="col-span-2 row-start-3 row-span-3">
+                                <textarea
+                                    class="w-full h-full mb-4 lg:mb-0 p-4 text-xs font-semibold leading-none resize-none bg-stone-100 rounded outline-none"
+                                    type="text" placeholder="Message..." required></textarea>
+                                <div class="flex flex-col">
+                                    <label class="mb-2">
+                                        <input class="mr-1" type="checkbox" name="terms" value="1">
+                                        <span class="text-sm font-semibold">Cochez cette case pour vous inscrire à notre
+                                            newsletter.</span>
+                                    </label>
+                                    <button
+                                        class="py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded"
+                                        type="submit">Soumettre</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex justify-between items-center">
-                            <label>
-                                <input class="mr-1" type="checkbox" name="terms" value="1">
-                                <span class="text-sm font-semibold">I agree to terms and conditions.</span>
-                            </label>
-                            <button
-                                class="py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded"
-                                type="submit">Submit</button>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+
             </div>
+            </form>
+        </div>
         </div>
     </section>
 </body>
