@@ -10,6 +10,10 @@ module.exports = {
       padding: {
         '1/2': '50%',
         'full': '100%'
+      },
+      backgroundImage: {
+        'test': "url(Assets/BGFormContact.webp)",
+        // 'footer-texture': "url('/img/footer-texture.png')",
       }
     },
   },
