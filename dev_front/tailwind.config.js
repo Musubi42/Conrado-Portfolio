@@ -12,8 +12,10 @@ module.exports = {
         'full': '100%'
       },
       backgroundImage: {
+        'logoWhite': "url(Assets/Icons/logoWhite.svg)",
         'formContact': "url(Assets/BGFormContact.webp)",
-        // 'footer-texture': "url('/img/footer-texture.png')",
+        'AlfonZoAcademyMockup': "url(Assets/AlfonZoAcademyMockup.webp)",
+        'RoswellMockup': "url(Assets/RoswellMockup.webp)",
       }
     },
   },
