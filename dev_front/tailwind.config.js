@@ -12,7 +12,7 @@ module.exports = {
         'full': '100%'
       },
       backgroundImage: {
-        'test': "url(Assets/BGFormContact.webp)",
+        'formContact': "url(Assets/BGFormContact.webp)",
         // 'footer-texture': "url('/img/footer-texture.png')",
       }
     },
