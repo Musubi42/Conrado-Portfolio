@@ -5,7 +5,7 @@ name: React App
 
 on:
   push:
-    branches: [ prod_front ]
+    branches: [ dev ]
 
 jobs:
   build:
