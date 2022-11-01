@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="../Scripts/loader.js"></script>
     <script src="../Scripts/main.js"></script>
     <script src="../Scripts/contact.js"></script>
     <script src="../dist/flowbite.js"></script>
@@ -17,171 +18,67 @@
     <title>Document</title>
 </head>
 
-<body>
-    <header class="bg-primary">
-
-        <nav class="flex w-full justify-between p-6 px-4">
-            <!-- Logo -->
-            <a class="ml-8" href="./home.html">
-                <svg class="" width="45" height="60" viewBox="0 0 512 789" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M329.851 687.376H180.677V788.619H329.851V687.376Z" fill="white" />
-                    <path
-                        d="M511.012 256.286C511.153 292.912 503.458 329.143 488.442 362.549C473.426 395.954 451.438 425.761 423.953 449.969C417.199 455.9 410.147 461.483 402.824 466.696C396.611 471.255 391.588 477.245 388.182 484.159C384.777 491.073 383.088 498.705 383.26 506.41V586.231H329.949V257.167L255.313 127.948L180.677 257.167V586.231H127.463V506.41C127.635 498.705 125.947 491.073 122.541 484.159C119.135 477.245 114.113 471.255 107.899 466.696C100.524 461.51 93.4382 455.926 86.6722 449.969C47.7182 415.449 20.1463 369.929 7.59505 319.416C-4.9562 268.903 -1.89687 215.772 16.3693 167.034C34.6355 118.296 67.25 76.2419 109.909 46.421C152.568 16.6002 203.266 0.414568 255.313 0C323.04 0.614634 387.81 27.832 435.647 75.7789C483.484 123.726 510.553 188.558 511.012 256.286Z"
-                        fill="white" />
-                </svg>
-            </a>
-
-            <!-- The different pages -->
-            <div class="hidden w-11/12 lg:flex justify-end items-center">
-                <ul class="flex mr-12 text-white justify-between text-xl">
-                    <li class="mr-12">
-                        <a class="hover:text-primary-hover font-medium" href="./home.html">Accueil</a>
-                    </li>
-                    <li class="mr-12">
-                        <a class="text-coolGray-500 hover:text-coolGray-900 font-medium"
-                            href="./branding.html">Créations</a>
-                    </li>
-                    <li class="mr-12">
-                        <a class="text-coolGray-500 hover:text-coolGray-900 font-medium"
-                            href="./coaching_youtube.html">Coachin YT</a>
-                    </li>
-                    <li class="mr-12">
-                        <a class="text-coolGray-500 hover:text-coolGray-900 font-medium"
-                            href="./pricing.html">Services</a>
-                    </li>
-                    <li class="mr-12">
-                        <a class="text-coolGray-500 hover:text-coolGray-900 font-medium" href="./blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a class="text-coolGray-500 hover:text-coolGray-900 font-medium"
-                            href="./contact.html">Contact</a>
-                    </li>
-                </ul>
+<body class="font-montserrat">
+    <div id="header"></div>
+    
+    <section class="md:my-24 my-10 overflow-hidden">
+        <div class="flex flex-col md:flex-row xl:items-center">
+            <div class="flex flex-row-reverse w-full md:w-1/2 my-auto">
+                <h1
+                    class="w-34 mb-6 text-quote md:text-3xl lg:text-quote leading-tight font-black tracking-tight text-center text-primary border-6 border-black p-8 w-quote m-auto md:mr-0">
+                    “ON NE PROPOSE PAS
+                    DES PRESTATIONS,
+                    ON VOUS APPORTE
+                    DES <span class="text-secondary">SOLUTIONS</span>”</h1>
             </div>
-
-            <!-- Menu burger -->
-            <button class="navbar-burger self-center lg:hidden text-white text-3xl">
-                <i class="fa-sharp fa-solid fa-bars"></i>
-            </button>
-        </nav>
-
-        <div class="navbar-menu hidden fixed top-0 left-0 z-50 w-full h-full bg-coolGray-900 bg-opacity-50">
-            <div class="fixed top-0 left-0 bottom-0 w-full w-4/6 max-w-xs bg-white">
-                <nav class="relative p-6 h-full overflow-y-auto">
-                    <div class="flex flex-col justify-between h-full">
-                        <div>
-                            <a href="#" class="inline-block mb-6 text-primary text-6xl">
-                                <i class="fa-regular fa-lightbulb"></i>
-                            </a>
-                            <ul class="mb-6">
-                                <li>
-                                    <a class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl"
-                                        href="./home.html">Accueil</a>
-                                </li>
-                                <li>
-                                    <a class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl"
-                                        href="./branding.html">Créations</a>
-                                </li>
-                                <li>
-                                    <a class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl"
-                                        href="./coaching_youtube.html">Coaching YT</a>
-                                </li>
-                                <li>
-                                    <a class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl"
-                                        href="./pricing.html">Services</a>
-                                </li>
-                                <li>
-                                    <a class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl"
-                                        href="./blog.html">Blog</a>
-                                </li>
-                                <li>
-                                    <a class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl"
-                                        href="./contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a class="inline-block py-2 px-4 w-full text-sm leading-5 text-green-50 bg-coolGray-500 hover:bg-coolGray-600 font-medium text-center focus:ring-2 focus:ring-coolGray-500 focus:ring-opacity-50 rounded-md"
-                            href="#">Contact Us</a>
-                    </div>
-
-                    <!-- WaterMark -->
-                    <div class="mt-auto px-10">
-                        <p class="mt-6 mb-4 text-center">
-                            <span class="text-sm text-darkBlueGray-400">2022 © Conrad-edison. All rights
-                                reserved.</span>
-                        </p>
-                    </div>
-                </nav>
-                <a class="navbar-close absolute top-5 p-4 right-3" href="#">
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M6.94004 6L11.14 1.80667C11.2656 1.68113 11.3361 1.51087 11.3361 1.33333C11.3361 1.1558 11.2656 0.985537 11.14 0.860002C11.0145 0.734466 10.8442 0.66394 10.6667 0.66394C10.4892 0.66394 10.3189 0.734466 10.1934 0.860002L6.00004 5.06L1.80671 0.860002C1.68117 0.734466 1.51091 0.663941 1.33337 0.663941C1.15584 0.663941 0.985576 0.734466 0.860041 0.860002C0.734505 0.985537 0.66398 1.1558 0.66398 1.33333C0.66398 1.51087 0.734505 1.68113 0.860041 1.80667L5.06004 6L0.860041 10.1933C0.797555 10.2553 0.747959 10.329 0.714113 10.4103C0.680267 10.4915 0.662842 10.5787 0.662842 10.6667C0.662842 10.7547 0.680267 10.8418 0.714113 10.9231C0.747959 11.0043 0.797555 11.078 0.860041 11.14C0.922016 11.2025 0.99575 11.2521 1.07699 11.2859C1.15823 11.3198 1.24537 11.3372 1.33337 11.3372C1.42138 11.3372 1.50852 11.3198 1.58976 11.2859C1.671 11.2521 1.74473 11.2025 1.80671 11.14L6.00004 6.94L10.1934 11.14C10.2554 11.2025 10.3291 11.2521 10.4103 11.2859C10.4916 11.3198 10.5787 11.3372 10.6667 11.3372C10.7547 11.3372 10.8419 11.3198 10.9231 11.2859C11.0043 11.2521 11.0781 11.2025 11.14 11.14C11.2025 11.078 11.2521 11.0043 11.286 10.9231C11.3198 10.8418 11.3372 10.7547 11.3372 10.6667C11.3372 10.5787 11.3198 10.4915 11.286 10.4103C11.2521 10.329 11.2025 10.2553 11.14 10.1933L6.94004 6Z"
-                            fill="#556987"></path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <section class="bg-gradient-to-r from-secondary to-white overflow-hidden">
-        <div class="py-20 md:py-28">
-            <div class="container px-4 mx-auto">
-                <div class="flex flex-wrap xl:items-center -mx-4">
-                    <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
-                        <h1
-                            class="mb-6 text-3xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tight text-center">
-                            “ON NE PROPOSE PAS
-                            DES PRESTATIONS,
-                            ON VOUS APPORTE
-                            DES SOLUTIONS”</h1>
-                    </div>
-                    <div class="w-full md:w-1/2 px-4">
-                        <div class="relative mx-auto max-w-max">
-
-                            <a href="#" class="text-9xl lg:text-[300px] text-black">
-                                <i class="fa-regular fa-lightbulb"></i>
-                            </a>
-                            <!-- <img class="absolute z-10 -left-14 -top-12 w-28 md:w-auto"
-                                src="flex-ui-assets/elements/circle3-yellow.svg" alt=""><img
-                                class="absolute z-10 -right-7 -bottom-8 w-28 md:w-auto"
-                                src="flex-ui-assets/elements/dots3-blue.svg" alt=""><img class="relative rounded-7xl"
-                                src="flex-ui-assets/images/headers/header.jpg" alt=""> -->
-                        </div>
-                    </div>
+            <div class="w-full md:w-1/2 px-4">
+                <div class="flex justify-center align-center mx-auto max-w-max h-46">
+                    <svg width="402" height="789" class="h-logoMobile md:h-logoTablet lg:h-logo" viewBox="0 0 512 789" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M329.851 687.376H180.677V788.619H329.851V687.376Z" fill="#FFCA0C"/>
+                        <path d="M511.012 256.286C511.153 292.912 503.458 329.143 488.442 362.549C473.426 395.954 451.438 425.761 423.953 449.969C417.199 455.9 410.147 461.483 402.824 466.696C396.611 471.255 391.588 477.245 388.182 484.159C384.777 491.073 383.088 498.705 383.26 506.41V586.231H329.949V257.167L255.313 127.948L180.677 257.167V586.231H127.463V506.41C127.635 498.705 125.947 491.073 122.541 484.159C119.135 477.245 114.113 471.255 107.899 466.696C100.524 461.51 93.4382 455.926 86.6722 449.969C47.7182 415.449 20.1463 369.929 7.59505 319.416C-4.9562 268.903 -1.89687 215.772 16.3693 167.034C34.6355 118.296 67.25 76.2419 109.909 46.421C152.568 16.6002 203.266 0.414568 255.313 0C323.04 0.614634 387.81 27.832 435.647 75.7789C483.484 123.726 510.553 188.558 511.012 256.286Z" fill="#FFCA0C"/>
+                    </svg>   
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Newsletter -->
-    <section style="background-color: #11203A;" class="py-8 px-6"
-        style="background-image: url('flex-ui-assets/elements/pattern-white.svg'); background-position: center;">
+    <section class="py-8 px-6 bg-primary">
         <!-- containers -->
         <div class="containers my-auto">
-            <div class="flex flex-wrap -mx-4">
-                <div class="w-full flex flex-row justify-center align-center md:w-1/3 px-4 mb-10 md:mb-0">
-                    <i class="fa-brands fa-space-awesome text-6xl md:text-8xl lg:text-9xl text-white pr-4"></i>
+            <div class="flex md:flex-row flex-col -mx-4">
+                <div class="flex justify-center align-center md:w-5/12 px-4 mb-10 md:mb-0">
+                    <svg width="579" height="642" class="h-32" viewBox="0 0 579 642" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M289.45 211.8C303.948 211.8 315.7 200.048 315.7 185.55C315.7 171.053 303.948 159.3 289.45 159.3C274.953 159.3 263.2 171.053 263.2 185.55C263.2 200.048 274.953 211.8 289.45 211.8Z" fill="#E8C135"/>
+                        <path d="M326.11 337.71H252.81V387.43H326.11V337.71Z" fill="white"/>
+                        <path d="M415.07 125.9C415.147 143.895 411.369 161.698 403.99 178.111C396.611 194.523 385.802 209.165 372.29 221.05C368.981 223.985 365.516 226.739 361.91 229.3C358.848 231.53 356.371 234.469 354.692 237.865C353.013 241.261 352.182 245.013 352.27 248.8V288H326.11V126.32L289.45 62.8501L252.8 126.32V288H226.66V248.8C226.745 245.011 225.911 241.258 224.229 237.862C222.547 234.466 220.066 231.528 217 229.3C199.326 216.895 185.142 200.15 175.814 180.675C166.486 161.201 162.328 139.653 163.74 118.106C165.152 96.5592 172.086 75.7384 183.875 57.6477C195.665 39.5569 211.912 24.8053 231.054 14.8125C250.196 4.81981 271.587 -0.0775907 293.17 0.591706C314.753 1.261 335.8 7.47446 354.286 18.6341C372.772 29.7937 388.074 45.5237 398.719 64.3102C409.365 83.0966 414.996 104.307 415.07 125.9Z" fill="white"/>
+                        <path d="M289.46 509.11C289.46 509.11 244.69 474.67 263.21 404.11H315.71C334.23 474.67 289.46 509.11 289.46 509.11Z" fill="white"/>
+                        <path d="M221.57 398.4H163.85C163.85 398.4 150.09 300.77 199.35 241.05L221.57 398.4Z" fill="#E8C135"/>
+                        <path d="M358.45 398.4H416.17C416.17 398.4 429.93 300.77 380.67 241.05L358.45 398.4Z" fill="#E8C135"/>
+                        <path d="M280.67 599.87C280.67 606.345 278.745 612.674 275.138 618.052C271.532 623.429 266.407 627.613 260.416 630.07C254.426 632.527 247.84 633.147 241.496 631.851C235.152 630.554 229.337 627.4 224.79 622.79C220.77 627.907 215.752 632.153 210.04 635.27C204.329 638.387 198.043 640.31 191.565 640.923C185.087 641.535 178.552 640.824 172.358 638.833C166.163 636.842 160.438 633.612 155.53 629.34C150.28 633.661 144.229 636.904 137.725 638.885C131.22 640.866 124.389 641.546 117.622 640.886C110.854 640.226 104.283 638.238 98.2845 635.037C92.2856 631.836 86.9763 627.484 82.6601 622.23C76.3941 626.914 69.1472 630.114 61.465 631.591C53.7828 633.068 45.8657 632.783 38.3097 630.757C30.7538 628.731 23.756 625.017 17.8434 619.895C11.9307 614.772 7.2573 608.375 4.17507 601.185C1.09283 593.995 -0.31789 586.199 0.0491356 578.385C0.416161 570.571 2.55136 562.942 6.29396 556.072C10.0366 549.203 15.289 543.272 21.6557 538.726C28.0225 534.181 35.3375 531.139 43.0501 529.83C42.8634 527.75 42.7668 525.644 42.7601 523.51C42.7634 505.928 49.4199 488.999 61.3923 476.123C73.3648 463.247 89.7662 455.378 107.302 454.098C124.837 452.818 142.207 458.221 155.923 469.221C169.639 480.222 178.683 496.005 181.24 513.4C188.706 512.005 196.388 512.271 203.74 514.181C211.092 516.09 217.932 519.596 223.776 524.448C229.619 529.301 234.322 535.381 237.549 542.257C240.777 549.132 242.45 556.635 242.45 564.23C242.45 565.41 242.45 566.57 242.33 567.73C247.026 566.899 251.846 567.107 256.453 568.338C261.06 569.57 265.341 571.796 268.995 574.859C272.65 577.923 275.589 581.749 277.606 586.07C279.623 590.391 280.669 595.102 280.67 599.87Z" fill="white"/>
+                        <path d="M298.31 599.87C298.31 606.345 300.235 612.674 303.842 618.052C307.449 623.429 312.573 627.613 318.564 630.07C324.554 632.527 331.141 633.147 337.484 631.851C343.828 630.554 349.643 627.4 354.19 622.79C358.21 627.907 363.228 632.153 368.94 635.27C374.651 638.387 380.937 640.31 387.415 640.923C393.893 641.535 400.428 640.824 406.622 638.833C412.817 636.842 418.542 633.612 423.45 629.34C428.7 633.661 434.751 636.904 441.255 638.885C447.76 640.866 454.591 641.546 461.358 640.886C468.126 640.226 474.697 638.238 480.696 635.037C486.695 631.836 492.004 627.484 496.32 622.23C502.586 626.914 509.833 630.114 517.515 631.591C525.197 633.068 533.115 632.783 540.67 630.757C548.226 628.731 555.224 625.017 561.137 619.895C567.049 614.772 571.723 608.375 574.805 601.185C577.887 593.995 579.298 586.199 578.931 578.385C578.564 570.571 576.429 562.942 572.686 556.072C568.944 549.203 563.691 543.272 557.324 538.726C550.958 534.181 543.643 531.139 535.93 529.83C536.123 527.75 536.22 525.644 536.22 523.51C536.217 505.928 529.56 488.999 517.588 476.123C505.615 463.247 489.214 455.378 471.679 454.098C454.143 452.818 436.773 458.221 423.057 469.221C409.342 480.222 400.297 496.005 397.74 513.4C390.274 512.005 382.592 512.271 375.24 514.181C367.889 516.09 361.048 519.596 355.205 524.448C349.361 529.301 344.659 535.381 341.431 542.257C338.203 549.132 336.53 556.635 336.53 564.23C336.53 565.41 336.53 566.57 336.65 567.73C331.954 566.899 327.134 567.107 322.527 568.338C317.92 569.57 313.639 571.796 309.985 574.859C306.331 577.923 303.392 581.749 301.375 586.07C299.358 590.391 298.312 595.102 298.31 599.87Z" fill="white"/>
+                    </svg>
+                        
                     <p class="text-sm md:text-base lg:text-xl text-white text-center font-normal my-auto">RECEVEZ
                         QUOTIDIENNEMENT PAR EMAIL
                         MES SECRETS
                         POUR FAIRE DÉCOLLER VOTRE BUSINESS</p>
                 </div>
 
-                <div class="w-full md:w-2/3 m-auto px-4">
+                <div class="w-full mb:w-7/12 m-auto px-4">
                     <!-- <div class="mx-auto md:mr-0 md:max-w-md"> -->
                     <div class="mb-1 flex flex-col md:flex-row">
-                        <div class="w-full mb-3 md:mb-0 md:mr-6">
+                        <div class="w-full md:w-1/3 mb-3 md:mb-0 mr-4 md:mr-10">
                             <input
                                 class="w-full py-3 px-4 text-coolGray-500 leading-tight placeholder-coolGray-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 border border-coolGray-200 shadow-xsm"
                                 type="text" placeholder="Prénom">
                         </div>
-                        <div class="w-full mb-3 md:mb-0 md:mr-6">
+                        <div class="w-full md:w-1/3 mb-3 md:mb-0 mr-4 md:mr-10">
                             <input
                                 class="w-full py-3 px-4 text-coolGray-500 leading-tight placeholder-coolGray-500 focus:outline-none focus:ring-2 focus:ring-yellow-700 focus:ring-opacity-50 border border-coolGray-200 shadow-xsm"
                                 type="text" placeholder="Email">
                         </div>
-                        <div class="w-full md:w-auto">
+                        <div class="w-full md:w-1/3">
                             <a style="background-color: #FFCA0C;"
                                 class="inline-block py-3 px-5 w-full leading-5 text-black hover:bg-green-600 font-bold text-center focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 border border-transparent shadow-sm"
                                 href="#">S'inscrire</a>
@@ -198,71 +95,64 @@
         </div>
     </section>
 
-    <!-- TODO: Ajouter de l'esapce au titre -->
-    <!-- Du au design, faut que je fasse overflow le contenu, carrousel en x -->
-    <!-- Testimonials -->
-    <section class="w-screen h-screen">
-        <div class="bg-white h-1/2 w-full">
-
-        </div>
-
-        <div class="bg-primary h-1/2 w-full">
-
-        </div>
-
-
-
-        <div style="top: -100vh" class="relative text-white mt-10">
-            <div class="flex justify-center mb-10">
-                <div class="w-auto px-4 border-x-[6px] border-secondary text-center">
-                    <h1 class="text-primary font-bold text-4xl">NOS TÉMOIGNAGES</h1>
-                </div>
-            </div>
-
-            <!-- Image of the testimonials -->
-            <div class="flex flex-col md:flex-row justify-between w-full px-12">
-
-                <div class="w-full md:w-1/3 text-center text-red-400 mr-[80px]">
-                    <!-- Emplacement image -->
-                    <div style="background-image: url(https://images.unsplash.com/photo-1663445058925-302daba82e49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60); background-size: cover"
-                        class="w-full h-0 pb-full">
-                        <!-- <img src="https://images.unsplash.com/photo-1663445058925-302daba82e49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
-                            alt="" style="height: 100%;"> -->
-                    </div>
-
-                    <span>Lorem Ipsum</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, repellat.</p>
-                </div>
-
-                <div class="w-full md:w-1/3 text-center text-red-400 mr-[80px]">
-                    <!-- Emplacement image -->
-                    <div style="background-image: url(https://images.unsplash.com/photo-1663445058925-302daba82e49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60); background-size: cover"
-                        class="w-full h-0 pb-full">
-                        <!-- <img src="https://images.unsplash.com/photo-1663445058925-302daba82e49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
-                            alt="" style="height: 100%;"> -->
-                    </div>
-
-                    <span>Lorem Ipsum</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, repellat.</p>
-                </div>
-
-                <div class="w-full md:w-1/3 text-center text-red-400">
-                    <!-- Emplacement image -->
-                    <div style="background-image: url(https://images.unsplash.com/photo-1663445058925-302daba82e49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60); background-size: cover"
-                        class="w-full h-0 pb-full">
-                        <!-- <img src="https://images.unsplash.com/photo-1663445058925-302daba82e49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
-                            alt="" style="height: 100%;"> -->
-                    </div>
-
-                    <span>Lorem Ipsum</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, repellat.</p>
-                </div>
+    <section class="my-20">
+        <div class="">
+            <div class="w-1/3 mx-auto">
+                <p>
+                    Chez CDA, nous proposons un Design haut de gamme à l’aide de nos nombreuses connaissances de la science du Design mais également de nos connaissances de la psychologie des relations humaines, mais également de nos connaissances du marketing digital.
+                    <br><br>
+                    Cela nous permet de vous offrir des prestations conformes sur tout types de supports tout en transmettant LE MESSAGE dont votre audience à besoin pour conclure ses achats chez vous et non chez vos concurrents.
+                    <br><br>
+                    Nous formons également des élèves dans la toute la France via visioconférences mais également en présentielle.
+                    <br><br>
+                    Pour toutes informations nécessitant plus qu’une simple réponse, nous avons également mis à disposition, en dehors de notre FàQ, un blog centré sur le Design et le Marketing Digital afin que vous puissiez trouvez certaines réponses par vous mêmes sans forcément avoir besoin de faire appel à nous. 
+                    <br><br>
+                    Nous sommes, avant d’être des prestataires ou des consultants, des conseillers qui ont pour but de vous aider à faire grossir votre entreprise de la meilleure des manières.
+                </p>
             </div>
         </div>
     </section>
 
+    <!-- TODO: Ajouter de l'esapce au titre -->
+    <!-- Du au design, faut que je fasse overflow le contenu, carrousel en x -->
+    <!-- Testimonials -->
+    <section class="">
+
+        <div class="text-white mt-20">
+            <div class="flex justify-center mb-10">
+                <div class="w-auto px-4 border-x-[6px] border-secondary text-center">
+                    <h1 class="text-primary font-bold text-4xl">ILS NOUS FONT CONFIANCES</h1>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary w-full h-auto pb-10">
+            <div class="flex flex-col">
+                <div class="bg-white flex flex-row self-center w-11/12 sm:w-10/12 md:w-7/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12 mt-10 px-6 rounded-lg">
+                    <!-- Photo -->
+                    <div class="rounded-full bg-ppFondationMagister bg-contain h-20 w-20 mr-6 my-4"></div>
+                    <div class="my-auto">
+                        <!-- Name of the channel -->
+                        <div>Fondation MAGister - l'École des Héros</div>
+                        <!-- Number of subscribers -->
+                        <div>23,9 k abonnés</div>
+                    </div>
+                </div>
+                <div class="bg-white flex flex-row self-center w-11/12 sm:w-10/12 md:w-7/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12 mt-10 px-6 rounded-lg">
+                    <div class="rounded-full bg-ppGiorno bg-contain h-20 w-20 mr-6 my-4"></div>
+                    <div class="my-auto">
+                        <div>Giorno2077</div>
+                        <div>24,4 k abonnés</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
     <section class="bg-white text-primary font-normal mx-auto w-10/12 sm:w-7/12 my-14">
-        <div style="background-image: url(../../Assets/BureauDesign.jpg); background-size: contain;"
+        <div style="background-image: url(../../dist/Assets/BGText.webp); background-size: contain;"
             class="border-8 border-secondary text-center h-full py-14 px-12 mb-14">
             <p class="pb-4">Être Designer, c’est avant tout trouver des solutions aux problèmes, pour attirer des
                 clients il faut
@@ -278,7 +168,7 @@
         </div>
 
         <div class="mb-16">
-            <p class="font-extrabold text-4xl text-center">CRÉEONS ENSEMBLE LA NOUVELLE IDENTITÉ EN POUPE DE CETTE ANNÉE
+            <p class="font-black text-5xl text-center">CRÉEONS ENSEMBLE LA NOUVELLE IDENTITÉ EN POUPE DE CETTE ANNÉE
                 !</p>
         </div>
 
@@ -288,7 +178,7 @@
             </button>
         </div>
 
-        <div class="flex justify-center">
+        <!-- <div class="flex justify-center">
             <button class="mr-16 bg-secondary p-[18px]">
                 <svg width="79" height="79" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg"
                     style="height: 50px;">
@@ -351,32 +241,10 @@
                     </defs>
                 </svg>
             </button>
-        </div>
+        </div> -->
     </section>
 
-    <footer class="p-4 bg-white text-primary border-t-2 border-gray-200">
-
-        <div class="flex flex-col lg:flex-row mx-auto font-semibold justify-evenly text-center">
-            <div class="mb-2 lg:mb-0 px-2">
-                <a class="mb-3 text-xl leading-9 hover:text-secondary" href="">MENTIONS
-                    LÉGALES</a>
-            </div>
-
-            <div class="mb-2 lg:mb-0 px-2">
-                <a class="mb-3 text-xl leading-9 hover:text-secondary" href="">FAQS</a>
-
-            </div>
-
-            <div class="mb-2 lg:mb-0 px-2">
-                <a class="mb-3 text-xl leading-9 hover:text-secondary" href="">POLITIQUE DE
-                    CONFIDENTIALITÉ</a>
-            </div>
-
-            <div class="mb-2 lg:mb-0 px-2">
-                <p class="mb-3 text-xl leading-9 font-regular text-[#1B3461] text-opacity-70" href="">CONRAD
-                    DESIGN 2022 TOUS DROITS RÉSERVÉS</p>
-            </div>
-    </footer>
+    <div id="footer"></div>
 </body>
 
 </html>
