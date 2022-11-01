@@ -20,15 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    
-    - name: Install dependencies
-      run: npm ci
-      
-    - name: Build
-      run: npm run build --if-present
+    # Mv la command a permis de la mettre à jour
+    - name: Move the Build to /var/www/conrado/portfolio/front
+      run: bash /home/debian/.local/bin/CD_Conrado_Portfolio_FrontEnd.sh
 
