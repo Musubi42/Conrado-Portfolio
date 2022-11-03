@@ -33,6 +33,7 @@ module.exports = {
       },
       fontSize: {
         'quote': '34px',
+        'text': '12px',
       },
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],
