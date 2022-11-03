@@ -3,10 +3,10 @@ var oldHref = document.location.href;
 window.onload = function () {
   var bodyList = document.querySelector("body");
 
-  var observer = new MutationObserver(function (mutations) {
-    mutations.forEach(function (mutation) {
-      if (oldHref !== document.location.href) {
-        oldHref = document.location.href;
+  // var observer = new MutationObserver(function (mutations) {
+  //   mutations.forEach(function (mutation) {
+  //     if (oldHref !== document.location.href) {
+  //       oldHref = document.location.href;
 
         const networkButton = {
           BUTTON_INSTAGRAM: document.getElementById("buttonInstagram"),
@@ -24,6 +24,7 @@ window.onload = function () {
         document
           .getElementById("buttonInstagram")
           .addEventListener("click", function () {
+            console.log("instagram");
             window.open("https://www.instagram.com/julien.boulet/", "_blank");
           });
 
@@ -136,9 +137,9 @@ window.onload = function () {
               );
           }
         );
-      }
-    });
-  });
+      // }
+  //   });
+  // });
 
   var config = {
     childList: true,
