@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
         + "</div>"
 
         + "<div class='lg:mb-0 px-2'>"
-        +    "<a class='leading-9 hover:text-secondary' href=''>POLITIQUE DE CONFIDENTIALITÉ</a>"
+        +    "<a class='leading-9 hover:text-secondary' href='./politique_confidentialite.html'>POLITIQUE DE CONFIDENTIALITÉ</a>"
         + "</div>"
 
         + "<div class='lg:mb-0 px-2'>"
