@@ -42,40 +42,47 @@ window.onload = function () {
         // Fonction pour afficher masquer le copier/actif
         const toggleClass = function (ARRAY_LOGOS) {
           // Logo Copier
-          ARRAY_LOGOS[1].classList.add("displayActive");
-          ARRAY_LOGOS[1].classList.remove("displayNone");
+          ARRAY_LOGOS[0].classList.add("active");
+          ARRAY_LOGOS[0].classList.remove("hidden");
           // Logo copié
-          ARRAY_LOGOS[0].classList.remove("displayActive");
-          ARRAY_LOGOS[0].classList.add("displayNone");
+          ARRAY_LOGOS[1].classList.remove("active");
+          ARRAY_LOGOS[1].classList.add("hidden");
         };
 
-        const displayCopied = function (element) {
-          const ARRAY_LOGOS = element.target.parentElement.children;
-          if (ARRAY_LOGOS[1].classList[2] === "displayActive") {
+        const displayLogoCopied = function (element) {
+          // On change le texte
+          var text = element.target.parentElement.parentElement.parentElement.children[2];
+          text.innerHTML = "Copié"; 
+          // On change les logos
+          const ARRAY_LOGOS = element.target.parentElement.parentElement.children;
+          console.log(ARRAY_LOGOS);
+          if (ARRAY_LOGOS[0].classList[2] === "active") {
             // Logo Copier
-            ARRAY_LOGOS[1].classList.remove("displayActive");
-            ARRAY_LOGOS[1].classList.add("displayNone");
+            ARRAY_LOGOS[0].classList.remove("active");
+            ARRAY_LOGOS[0].classList.add("hidden");
             // Logo copié
-            ARRAY_LOGOS[0].classList.add("displayActive");
-            ARRAY_LOGOS[0].classList.remove("displayNone");
+            ARRAY_LOGOS[1].classList.remove("hidden");
+            ARRAY_LOGOS[1].classList.add("active");
             window.setTimeout(function () {
               toggleClass(ARRAY_LOGOS);
+              // On change le texte
+              text.innerHTML = "Copier"; 
             }, 1000);
           }
         };
+
 
         // When user click on the button, copy the text
         networkReferences.REFERENCE_INSTAGRAM.addEventListener(
           "click",
           function (el) {
-            console.log(networkReferences.REFERENCE_INSTAGRAM);
             navigator.clipboard
               .writeText(
-                networkReferences.REFERENCE_INSTAGRAM.firstChild.textContent
+                el.target.parentElement.parentElement.children[0].innerHTML
               )
               .then(
                 function () {
-                  displayCopied(el);
+                  displayLogoCopied(el);
                 },
                 function (err) {
                   console.error("Could not copy text: ", err);
@@ -89,11 +96,11 @@ window.onload = function () {
           function (el) {
             navigator.clipboard
               .writeText(
-                networkReferences.REFERENCE_INSTAGRAM.firstChild.textContent
+                el.target.parentElement.parentElement.children[0].innerHTML
               )
               .then(
                 function () {
-                  displayCopied(el);
+                  displayLogoCopied(el);
                 },
                 function (err) {
                   console.error("Could not copy text: ", err);
@@ -107,11 +114,11 @@ window.onload = function () {
           function (el) {
             navigator.clipboard
               .writeText(
-                networkReferences.REFERENCE_INSTAGRAM.firstChild.textContent
+                el.target.parentElement.parentElement.children[0].innerHTML
               )
               .then(
                 function () {
-                  displayCopied(el);
+                  displayLogoCopied(el);
                 },
                 function (err) {
                   console.error("Could not copy text: ", err);
@@ -125,11 +132,11 @@ window.onload = function () {
           function (el) {
             navigator.clipboard
               .writeText(
-                networkReferences.REFERENCE_INSTAGRAM.firstChild.textContent
+                el.target.parentElement.parentElement.children[0].innerHTML
               )
               .then(
                 function () {
-                  displayCopied(el);
+                  displayLogoCopied(el);
                 },
                 function (err) {
                   console.error("Could not copy text: ", err);
@@ -141,10 +148,10 @@ window.onload = function () {
   //   });
   // });
 
-  var config = {
-    childList: true,
-    subtree: true,
-  };
+  // var config = {
+  //   childList: true,
+  //   subtree: true,
+  // };
 
-  observer.observe(bodyList, config);
+  // observer.observe(bodyList, config);
 };
