@@ -1,5 +1,6 @@
 var oldHref = document.location.href;
 
+// TODO: Changer les URL Instage et Linkedin
 window.onload = function () {
   var bodyList = document.querySelector("body");
 
@@ -24,7 +25,6 @@ window.onload = function () {
         document
           .getElementById("buttonInstagram")
           .addEventListener("click", function () {
-            console.log("instagram");
             window.open("https://www.instagram.com/julien.boulet/", "_blank");
           });
 
@@ -55,7 +55,6 @@ window.onload = function () {
           text.innerHTML = "Copié"; 
           // On change les logos
           const ARRAY_LOGOS = element.target.parentElement.parentElement.children;
-          console.log(ARRAY_LOGOS);
           if (ARRAY_LOGOS[0].classList[2] === "active") {
             // Logo Copier
             ARRAY_LOGOS[0].classList.remove("active");
@@ -78,7 +77,7 @@ window.onload = function () {
           function (el) {
             navigator.clipboard
               .writeText(
-                el.target.parentElement.parentElement.children[0].innerHTML
+                "@conrad_ception"
               )
               .then(
                 function () {
@@ -96,7 +95,7 @@ window.onload = function () {
           function (el) {
             navigator.clipboard
               .writeText(
-                el.target.parentElement.parentElement.children[0].innerHTML
+                "conrad.gonzalez"
               )
               .then(
                 function () {
@@ -112,9 +111,10 @@ window.onload = function () {
         networkReferences.REFERENCE_MAIL.addEventListener(
           "click",
           function (el) {
+            // console.log(el.target.parentElement.parentElement.parentElement.innerText);
             navigator.clipboard
               .writeText(
-                el.target.parentElement.parentElement.children[0].innerHTML
+                "contact@conrad-edison.fr"
               )
               .then(
                 function () {
@@ -127,23 +127,23 @@ window.onload = function () {
           }
         );
 
-        networkReferences.REFERENCE_TELE.addEventListener(
-          "click",
-          function (el) {
-            navigator.clipboard
-              .writeText(
-                el.target.parentElement.parentElement.children[0].innerHTML
-              )
-              .then(
-                function () {
-                  displayLogoCopied(el);
-                },
-                function (err) {
-                  console.error("Could not copy text: ", err);
-                }
-              );
-          }
-        );
+        // networkReferences.REFERENCE_TELE.addEventListener(
+        //   "click",
+        //   function (el) {
+        //     navigator.clipboard
+        //       .writeText(
+        //         el.target.parentElement.parentElement.children[0].innerHTML
+        //       )
+        //       .then(
+        //         function () {
+        //           displayLogoCopied(el);
+        //         },
+        //         function (err) {
+        //           console.error("Could not copy text: ", err);
+        //         }
+        //       );
+        //   }
+        // );
       // }
   //   });
   // });
