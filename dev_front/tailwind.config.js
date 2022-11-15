@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors: {
       'primary': '#11203A',
-      'secondary': '#FFCA0C'
+      'secondary': '#FFCA0C',
+      'form': '#888586'
       },
       padding: {
         '1/2': '50%',
