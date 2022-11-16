@@ -1407,6 +1407,11 @@ input:checked + .toggle-bg {
 .flex-shrink {
   flex-shrink: 1;
 }
+.border-spacing-11 {
+  --tw-border-spacing-x: 2.75rem;
+  --tw-border-spacing-y: 2.75rem;
+  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
+}
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1560,11 +1565,14 @@ input:checked + .toggle-bg {
 .border {
   border-width: 1px;
 }
-.border-8 {
-  border-width: 8px;
+.border-16 {
+  border-width: 16px;
 }
 .border-2 {
   border-width: 2px;
+}
+.border-8 {
+  border-width: 8px;
 }
 .border-0 {
   border-width: 0px;

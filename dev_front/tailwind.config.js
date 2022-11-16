@@ -31,6 +31,7 @@ module.exports = {
       },
       borderWidth: {
         '6': '6px',
+        '16': '16px'
       },
       fontSize: {
         'quote': '34px',
