@@ -112,20 +112,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
         + "<div class='flex flex-col lg:flex-row mx-auto font-semibold justify-evenly text-center'>"
         + "<div class='lg:mb-0 px-2'>"
-        +   "<button class='mb-1 leading-9 hover:text-secondary' data-url='mention'>MENTIONS LÉGALES</button>"
+        +   "<button class='leading-1 md:leading-9 hover:text-secondary' data-url='mention'>MENTIONS LÉGALES</button>"
         + "</div>"
 
         + "<div class='lg:mb-0 px-2'>"
-        +   "<button class='leading-9 hover:text-secondary' data-url='faq'>FAQS</button>"
+        +   "<button class='leading-1 md:leading-9 hover:text-secondary' data-url='faq'>FAQS</button>"
 
         + "</div>"
 
         + "<div class='lg:mb-0 px-2'>"
-        +    "<button class='leading-9 hover:text-secondary' data-url='privacy'>POLITIQUE DE CONFIDENTIALITÉ</button>"
+        +    "<button class='leading-1 md:leading-9 hover:text-secondary' data-url='privacy'>POLITIQUE DE CONFIDENTIALITÉ</button>"
         + "</div>"
 
         + "<div class='lg:mb-0 px-2'>"
-        +   "<p class='leading-9 font-regular text-[#1B3461] text-opacity-70'>CONRAD DESIGN 2022 TOUS DROITS RÉSERVÉS</p>"
+        +   "<p class='leading-1 md:leading-9 font-regular text-[#1B3461] text-opacity-70'>CONRAD DESIGN 2022 TOUS DROITS RÉSERVÉS</p>"
         + "</div>"
         + "</footer>"
 });

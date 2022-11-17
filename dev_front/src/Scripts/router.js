@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.location = "https://conrad-edison.fr/creation/mockups";
                 break;
             case "faq":
-                document.location = "https://conrad-edison.fr/creation/FAQ";
+                document.location = "https://conrad-edison.fr/FAQ";
                 break;
             case "mention":
                 document.location = "https://conrad-edison.fr/mentions_legales";
