@@ -1121,17 +1121,9 @@ input:checked + .toggle-bg {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
 .-mx-3 {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
-}
-.mx-14 {
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
 }
 .mb-1 {
   margin-bottom: 0.25rem;
@@ -1822,11 +1814,11 @@ input:checked + .toggle-bg {
 .pb-full {
   padding-bottom: 100%;
 }
-.pt-24 {
-  padding-top: 6rem;
-}
 .pt-10 {
   padding-top: 2.5rem;
+}
+.pt-24 {
+  padding-top: 6rem;
 }
 .pb-32 {
   padding-bottom: 8rem;
@@ -2395,6 +2387,11 @@ input:checked + .toggle-bg {
   .md\:my-24 {
     margin-top: 6rem;
     margin-bottom: 6rem;
+  }
+
+  .md\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
   }
 
   .md\:mr-0 {
