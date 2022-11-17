@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     + "<nav class='flex w-full justify-between p-6 px-4'>"
     + "    <!-- Logo -->"
-    + "    <a class='ml-8' href='./home.html'>"
+    + "    <a class='ml-8' href='home'>"
     + "        <svg class='' width='45' height='60' viewBox='0 0 512 789' fill='none'"
     + "           xmlns='http://www.w3.org/2000/svg'>"
     + "            <path d='M329.851 687.376H180.677V788.619H329.851V687.376Z' fill='white' />"

@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.location = "https://conrad-edison.fr/services";
                 break;
             default:
-                document.location = "https://conrad-edison.fr/";
                 break;
         }
     });
