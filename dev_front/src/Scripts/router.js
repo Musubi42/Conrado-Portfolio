@@ -1,48 +1,47 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.body.addEventListener('click', function(e) {
-
-        console.log(e.target.innerText);
-        var hostname = window.location.hostname 
-        switch (e.target.innerText) {
-            case "Accueil":
-                document.location = hostname + "/";
-                console.log(hostname + "/");
+        switch (e.target.getAttribute('data-url')) {
+            case "home":
+                document.location = "https://conrad-edison.fr/";
                 break;
-            case "À propos":
-                document.location = hostname + "/about";
+            case "about":
+                document.location = "https://conrad-edison.fr/about";
                 break;
-            case "Blog":
-                document.location = hostname + "/blog";
+            case "blog":
+                document.location = "https://conrad-edison.fr/blog";
                 break;
-            case "Coaching YT":
-                document.location = hostname + "/coaching_youtube";
+            case "coaching_yt":
+                document.location = "https://conrad-edison.fr/coaching_youtube";
                 break;
-            case "Contact":
-                document.location = hostname + "/contact";
+            case "contact":
+                document.location = "https://conrad-edison.fr/contact";
                 break;
-            case "Création":
-                document.location = hostname + "/creation/branding";
+            case "creation":
+                document.location = "https://conrad-edison.fr/creation/branding";
                 break;
-            case "BRANDING":
-                document.location = hostname + "/creation/branding";
+            case "branding":
+                document.location = "https://conrad-edison.fr/creation/branding";
                 break;
-            case "MAQUETTE WEB":
-                document.location = hostname + "/creation/maquette_web";
+            case "maquette_web":
+                document.location = "https://conrad-edison.fr/creation/maquette_web";
                 break;
-            case "MOCKUPS":  
-                document.location = hostname + "/creation/mockups";
+            case "mockups":  
+                document.location = "https://conrad-edison.fr/creation/mockups";
                 break;
-            case "FAQS":
-                document.location = hostname + "/creation/FAQ";
+            case "faq":
+                document.location = "https://conrad-edison.fr/creation/FAQ";
                 break;
-            case "MENTIONS LÉGALES":
-                document.location = hostname + "/mentions_legales";
+            case "mention":
+                document.location = "https://conrad-edison.fr/mentions_legales";
                 break;
-            case "POLITIQUE CONFIDENTIALITÉ":
-                document.location = hostname + "/politique_confidentialite";
+            case "privacy":
+                document.location = "https://conrad-edison.fr/politique_confidentialite";
+                break;
+            case "services":
+                document.location = "https://conrad-edison.fr/services";
                 break;
             default:
-                document.location = hostname + "/";
+                document.location = "https://conrad-edison.fr/";
                 break;
         }
     });
