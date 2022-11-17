@@ -1,3 +1,7 @@
+// TODO : récupérer la location. Compter le nombre de / et trim le dernier, pour connaitre la profondeur
+// Selon la profondeur, on va chercher le bon fichier dans le dossier parent
+
+
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("header").innerHTML =
     "<header class='bg-primary'>"
@@ -18,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
     + "    <div class='hidden w-11/12 lg:flex justify-end items-center'>"
     + "        <ul class='flex mr-12 text-white justify-between text-xl'>"
     + "            <li class='mr-12'>"
-    + "                <a class='hover:text-primary-hover font-medium' href='./home.html'>Accueil</a>"
+    + "                <a class='hover:text-primary-hover font-medium'>Accueil</a>"
     + "            </li>"
     + "            <li class='mr-12'>"
-    + "                <a class='hover:text-primary-hover font-medium' href='./about.html'>À propos</a>"
+    + "                <a class='hover:text-primary-hover font-medium'>À propos</a>"
     + "            </li>"
     + "            <li class='mr-12'>"
     + "                <a class='text-coolGray-500 hover:text-coolGray-900 font-medium'"
