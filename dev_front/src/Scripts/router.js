@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.location = "https://conrad-edison.fr/";
                 break;
             case "about":
-                document.location = "https://conrad-edison.fr/about";
+                document.location = "https://conrad-edison.fr/a_propos";
                 break;
             case "blog":
                 document.location = "https://conrad-edison.fr/blog";
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.location = "https://conrad-edison.fr/mentions_legales";
                 break;
             case "privacy":
-                document.location = "https://conrad-edison.fr/politique_confidentialite";
+                document.location = "https://conrad-edison.fr/politique_de_confidentialite";
                 break;
             case "services":
                 document.location = "https://conrad-edison.fr/services";
