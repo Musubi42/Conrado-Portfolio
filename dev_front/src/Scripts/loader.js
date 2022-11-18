@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
     + "    </header>"
     
     document.getElementById('footer').innerHTML = 
-        "<footer class='p-4 bg-white text-primary border-t-2 border-gray-200 text-xs xl:text-base'>"
+        "<footer class='p-4 pb-0 bg-white text-primary border-t-2 border-gray-200 text-xs xl:text-base'>"
 
         + "<div class='flex flex-col lg:flex-row mx-auto font-semibold justify-evenly text-center'>"
         + "<div class='lg:mb-0 px-2'>"
