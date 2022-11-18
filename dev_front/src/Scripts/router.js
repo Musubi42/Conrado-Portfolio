@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.body.addEventListener('click', function(e) {
+        console.log(e.target.getAttribute('data-url'));
         switch (e.target.getAttribute('data-url')) {
             case "home":
                 document.location = "https://conrad-edison.fr/";
