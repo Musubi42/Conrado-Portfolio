@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.location = "https://conrad-edison.fr/a_propos";
                 break;
             case "blog":
-                document.location = "https://conrad-edison.fr/blog";
+                document.location = "https://conrad-design.fr/";
                 break;
             case "coaching_yt":
                 document.location = "https://conrad-edison.fr/coaching_youtube";
