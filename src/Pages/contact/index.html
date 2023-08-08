@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../dist/Assets/Favicon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../../../dist/output.css">
+    <script src="../../Scripts/loader.js"></script>
+    <script src="../../Scripts/main.js"></script>
+    <script src="../../Scripts/contact.js"></script>
+    <script src="../../Scripts/router.js"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+
+    <section class="relative pt-10 md:pt-24 pb-12 md:pb-28 bg-blueGray-50 overflow-hidden text-primary">
+        <div class="relative z-10 container px-4 mx-auto">
+            <div class="md:max-w-6xl mx-auto">
+                <!-- <h2
+                    class="mb-10 md:mb-20 text-3xl sm:text-3xl md:text-6xl xl:text-10xl text-center font-bold font-heading tracking-px-n leading-none">
+                    À PROPOS</h2> -->
+
+                <div class="">
+                    <form class="w-full px-10 pt-4 pb-1 mb-18 lg:bg-formContact bg-contain rounded-xl bg-form">
+                        <div class="flex flex-row mb-4 -mx-3">
+                            <!-- <h3>CONTACTEZ MOI</h3> -->
+
+                            <!-- Image -->
+                            <div class="w-0 h-max lg:w-3/12 lg:mx-20 lg:my-auto">
+                                <svg class="w-full h-1/2" width="512" height="789" viewBox="0 0 512 789" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M329.851 687.376H180.677V788.619H329.851V687.376Z" fill="white" />
+                                    <path
+                                        d="M511.012 256.286C511.153 292.912 503.458 329.143 488.442 362.549C473.426 395.954 451.438 425.761 423.953 449.969C417.199 455.9 410.147 461.483 402.824 466.696C396.611 471.255 391.588 477.245 388.182 484.159C384.777 491.073 383.088 498.705 383.26 506.41V586.231H329.949V257.167L255.313 127.948L180.677 257.167V586.231H127.463V506.41C127.635 498.705 125.947 491.073 122.541 484.159C119.135 477.245 114.113 471.255 107.899 466.696C100.524 461.51 93.4382 455.926 86.6722 449.969C47.7182 415.449 20.1463 369.929 7.59505 319.416C-4.9562 268.903 -1.89687 215.772 16.3693 167.034C34.6355 118.296 67.25 76.2419 109.909 46.421C152.568 16.6002 203.266 0.414568 255.313 0C323.04 0.614634 387.81 27.832 435.647 75.7789C483.484 123.726 510.553 188.558 511.012 256.286Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                            <div class="w-full flex flex-col">
+                                <h3 class="text-2xl font-black text-primary mb-8 ml-auto lg:pr-8">CONTACTEZ MOI</h3>
+                                <div class="w-full lg:grid lg:h-4/6 grid-cols-12 grid-rows-5 gap-x-11">
+                                    <!-- Name, Mail, Tel -->
+                                    <input
+                                        class="w-full col-span-5 row-start-1 row-end-1 mb-4 lg:mb-0 p-4 text-xs font-semibold leading-none bg-stone-100 rounded outline-none"
+                                        type="text" placeholder="Prénom" required>
+
+                                    <input
+                                        class="w-full col-span-5 row-start-3 row-end-3 mb-4 lg:mb-0 p-4 text-xs font-semibold leading-none bg-stone-100 rounded outline-none"
+                                        type="email" placeholder="Mail" required>
+                                    <input
+                                        class="w-full col-span-5 row-start-5 row-end-5 mb-4 lg:mb-0 p-4 text-xs font-semibold leading-none bg-stone-100 rounded outline-none"
+                                        type="tel" placeholder="Téléphone">
+
+                                    <!-- Subject, Text -->
+                                    <input
+                                        class="w-full col-span-7 row-start-1 row-end-1 mb-4 lg:mb-0 p-4 text-xs font-semibold leading-none resize-none bg-stone-100 rounded outline-none"
+                                        type="text" placeholder="Objet"></input>
+
+                                    <!-- <div class="col-span-2 row-start-3 row-span-3"> -->
+                                    <textarea
+                                        class="col-span-7 row-start-3 row-span-3 w-full h-auto mb-4 lg:mb-0 p-4 text-xs font-semibold leading-none bg-stone-100 rounded outline-none"
+                                        type="text" placeholder="Message" required>
+                                    </textarea>
+                                    <!-- TODO: placer le label en dessous du textarea -->
+                                    <!-- <label class="col-start-13">
+                                        <input class="mr-1" type="checkbox" name="terms" value="1">
+                                        <span class="text-xs font-semibold">Cochez cette case pour vous inscrire à
+                                            notre
+                                            newsletter.</span>
+                                    </label> -->
+                                </div>
+                                <div class="flex flex-col w-full lg-w-7/12 ml-auto mt-3">
+                                    <label class="mb-2">
+                                        <input class="mr-1" type="checkbox" name="terms" value="1">
+                                        <span class="text-xs font-semibold">Cochez cette case pour vous inscrire à
+                                            notre
+                                            newsletter.</span>
+                                    </label>
+                                    <button
+                                        class="ml-auto py-4 px-8 text-xl text-white font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded"
+                                        type="submit">Soumettre</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="mt-10 md:mt-44">
+                    <h2
+                        class="mb-10 md:mb-20 text-3xl sm:text-2xl md:text-5xl text-center text-primary font-bold font-heading tracking-px-n leading-none">
+                        NOS RÉSEAUX</h2>
+
+                    <div class="flex flex-col justify-between items-center">
+
+                        <div class="flex flex-row mr-10 mb-6 lg:mb-20 items-center w-1/2">
+                            <button
+                                class="flex justify-center items-center w-16 h-16 md:w-28 md:h-28 bg-secondary p-3 md:p-7 shadow-lg shadow-secondary"
+                                id="buttonInstagram">
+                                <svg width="79" height="79" viewBox="0 0 79 79" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>Instagram</title>
+                                    <path
+                                        d="M21.5914 75.2736C11.7274 75.2736 3.72656 67.2508 3.72656 57.4087V21.5913C3.72656 11.7492 11.7493 3.72644 21.5914 3.72644H57.3869C67.251 3.72644 75.2518 11.7492 75.2518 21.5913V57.3868C75.2518 67.2508 67.2291 75.2517 57.3869 75.2517H21.5914V75.2736Z"
+                                        fill="secondary" />
+                                    <path
+                                        d="M57.4087 7.45283C65.2123 7.45283 71.5472 13.8097 71.5472 21.5913V57.3868C71.5472 65.1903 65.1903 71.5252 57.4087 71.5252H21.5913C13.7877 71.5252 7.45283 65.1684 7.45283 57.3868V21.5913C7.45283 13.8097 13.8097 7.45283 21.5913 7.45283H57.4087ZM57.4087 0H21.5913C9.66676 0 0 9.66676 0 21.5913V57.3868C0 69.3113 9.66676 78.9781 21.5913 78.9781H57.3868C69.3113 78.9781 78.9781 69.3113 78.9781 57.3868V21.5913C79 9.66676 69.3332 0 57.4087 0Z"
+                                        fill="#11203A" />
+                                    <path
+                                        d="M39.4996 56.5538C48.9182 56.5538 56.5535 48.9186 56.5535 39.5C56.5535 30.0814 48.9182 22.4462 39.4996 22.4462C30.0811 22.4462 22.4458 30.0814 22.4458 39.5C22.4458 48.9186 30.0811 56.5538 39.4996 56.5538Z"
+                                        fill="secondary" />
+                                    <path
+                                        d="M39.4998 25.8657C47.0403 25.8657 53.156 31.9814 53.156 39.5219C53.156 47.0625 47.0403 53.1782 39.4998 53.1782C31.9593 53.1782 25.8436 47.0625 25.8436 39.5219C25.8436 31.9814 31.9593 25.8657 39.4998 25.8657ZM39.4998 19.0705C28.2329 19.0705 19.0703 28.2331 19.0703 39.5C19.0703 50.7669 28.2329 59.9515 39.5218 59.9515C50.8106 59.9515 59.9732 50.7889 59.9732 39.5C59.9732 28.2112 50.7668 19.0705 39.4998 19.0705Z"
+                                        fill="#11203A" />
+                                    <path
+                                        d="M60.7627 23.4326C63.5713 23.4326 65.8482 21.1557 65.8482 18.3471C65.8482 15.5385 63.5713 13.2617 60.7627 13.2617C57.9541 13.2617 55.6772 15.5385 55.6772 18.3471C55.6772 21.1557 57.9541 23.4326 60.7627 23.4326Z"
+                                        fill="#11203A" />
+                                </svg>
+                            </button>
+
+                            <span class="flex flex-row underline text-[#00206C] text-opacity-70 text-sm ml-4 md:ml-20 lg:text-base my-auto">
+                                <span>@conrad_ception</span>
+                                <button id="referenceInstagram" class="ml-4" data-tooltip-target="tooltipInsta" type="button"
+                                    class="w-1/12 ml-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-6 w-6 active">
+                                        <path d="M0 448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H224c-53 0-96-43-96-96V160H64c-35.3 0-64 28.7-64 64V448zm224-96H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64z" fill="currentColor"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-6 w-6 hidden">
+                                        <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" fill="currentColor"/>
+                                    </svg>
+                                </button>
+
+                                <div id="tooltipInsta" role="tooltip"
+                                    class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                                    Copier
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+                            </span>
+                        </div>
+
+                        <div class="flex flex-row mr-10 mb-6 lg:mb-20 items-center w-1/2">
+                            <button
+                                class="flex justify-center items-center w-16 h-16 md:w-28 md:h-28 bg-secondary p-3 md:p-7 shadow-lg shadow-secondary"
+                                id="buttonMail">
+                                <svg width="82" height="62" viewBox="0 0 82 62" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>Adresse email</title>
+                                    <path
+                                        d="M82 7.64775V56.3627C82 59.477 79.4887 62 76.3888 62H63.3516V30.1475L57.191 34.8288L41.0736 47.079L24.9659 34.8288L18.7171 30.0785V62H5.78777C2.58978 62 0 59.3982 0 56.1853V8.78112C0 3.93228 3.9141 0 8.74052 0C9.59397 0 10.4474 0.137975 11.242 0.413925C12.0464 0.680019 12.8018 1.08409 13.4885 1.60642L18.7171 5.57813L41.0736 22.5786L63.3418 5.64712L67.8837 2.19774C69.7574 0.768717 72.0431 0 74.3876 0C76.4869 0 78.39 0.857415 79.7732 2.23716C81.1465 3.62677 82 5.53871 82 7.64775Z"
+                                        fill="#11203A" />
+                                </svg>
+                            </button>
+                            <span class="flex flex-row text-[#00206C] text-opacity-70 text-sm ml-4 md:ml-20 lg:text-base my-auto">
+                                <span>contact@conrad-edison.fr</span>
+                                <button id="referenceMail" class="ml-4" data-tooltip-target="tooltipMail" type="button"
+                                    class="w-1/12 ml-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-6 w-6 active">
+                                        <path d="M0 448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H224c-53 0-96-43-96-96V160H64c-35.3 0-64 28.7-64 64V448zm224-96H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64z" fill="currentColor"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-6 w-6 hidden">
+                                        <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" fill="currentColor"/>
+                                    </svg>
+                                </button>
+
+                                <div id="tooltipMail" role="tooltip"
+                                    class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                                    Copier
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+                            </span>
+                        </div>
+
+                        <div class="flex flex-row mr-10 items-center w-1/2">
+                            <button
+                                class="flex justify-center items-center w-16 h-16 md:w-28 md:h-28 bg-secondary p-3 md:p-7 shadow-lg shadow-secondary"
+                                id="buttonLinkedin">
+                                <svg width="76" height="73" viewBox="0 0 76 73" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>LinkedIn</title>
+                                    <path
+                                        d="M12.5391 73H1.3859C0.620354 73 0 72.376 0 71.6059V21.4565C0 20.6864 0.620354 20.0624 1.3859 20.0624H12.5391C13.3046 20.0624 13.925 20.6864 13.925 21.4565V71.6059C13.925 72.376 13.2914 73 12.5391 73Z"
+                                        fill="#11203A" />
+                                    <path
+                                        d="M7.47065 12.9722H6.45433C2.89059 12.9722 0 10.0777 0 6.49272C0 2.90778 2.89059 0 6.45433 0H7.47065C11.0344 0 13.925 2.90778 13.925 6.49272C13.925 10.0777 11.0344 12.9722 7.47065 12.9722Z"
+                                        fill="#11203A" />
+                                    <path
+                                        d="M76 40.1513V72.0042C76 72.5486 75.5644 73 75.0101 73H63.0649C62.5238 73 62.075 72.5618 62.075 72.0042V46.02C62.075 40.3106 61.7714 36.6195 61.1775 34.9465C60.5835 33.2735 59.6068 31.9723 58.2737 31.0429C56.9274 30.1135 55.3171 29.6488 53.4297 29.6488C51.0142 29.6488 48.8364 30.3126 46.9225 31.6404C44.9955 32.9682 43.6888 34.7208 42.976 36.9116C42.2633 39.1024 41.9069 43.152 41.9069 49.0473V71.8714C41.9069 72.1768 41.7881 72.4556 41.5769 72.6548C41.3789 72.8539 41.1018 72.9867 40.7982 72.9867H28.9323C28.4043 72.9867 27.9819 72.5618 27.9819 72.0307V21.0183C27.9819 20.4872 28.4043 20.0624 28.9323 20.0624H40.0194C40.4022 20.0624 40.7322 20.2881 40.8774 20.6067C40.9434 20.7262 40.9698 20.8723 40.9698 21.0183V27.7102C45.5498 21.8814 51.3178 18.9603 58.2605 18.9603C60.7683 18.9603 63.0913 19.3321 65.2428 20.0624C65.7443 20.235 66.2327 20.4209 66.7079 20.6333C69.2553 21.7486 71.1824 23.1693 72.4891 24.8821C73.7958 26.6082 74.7065 28.56 75.2213 30.7508C75.7492 32.9416 76 36.0751 76 40.1513Z"
+                                        fill="#11203A" />
+                                </svg>
+                            </button>
+                            <span class="flex flex-row text-[#00206C] text-opacity-70 text-sm ml-4 md:ml-20 lg:text-base my-auto">
+                                <span>conrad.gonzalez</span>
+                                <button id="referenceLinkedin" class="ml-4" data-tooltip-target="tooltipLinkedin" type="button"
+                                    class="w-1/12 ml-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-6 w-6 active">
+                                        <path d="M0 448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H224c-53 0-96-43-96-96V160H64c-35.3 0-64 28.7-64 64V448zm224-96H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64z" fill="currentColor"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-6 w-6 hidden">
+                                        <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" fill="currentColor"/>
+                                    </svg>
+                                </button>
+
+                                <div id="tooltipLinkedin" role="tooltip"
+                                    class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                                    Copier
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+                            </span>
+                        </div>
+
+                        <!-- <div class="flex flex-row lg:flex-col mb-4 lg:mb-0 items-center flex-1">
+                            <button
+                                class="flex justify-center items-center w-16 h-16 md:w-40 md:h-40 bg-secondary p-3 md:p-8 rounded-xl shadow-lg shadow-secondary"
+                                id="buttonTel">
+                                <svg width="73" height="75" viewBox="0 0 73 75" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>Téléphone</title>
+                                    <path
+                                        d="M72.7522 61.0489C70.7564 63.2734 64.7835 69.5198 56.7129 74.2045C47.6808 79.4491 25.0859 57.3365 20.8612 53.0643C20.8029 53.0201 20.7446 52.9759 20.7009 52.9317C16.6219 48.5416 -4.57448 25.0148 0.888505 16.043C5.76877 8.0289 12.1204 2.18034 14.3784 0.221003C14.8155 -0.162026 15.4856 -0.0441708 15.7915 0.441981L26.3096 17.8551C26.5427 18.2381 26.4698 18.7537 26.1348 19.0631C20.8029 23.8951 20.395 24.2782 20.395 24.2782C16.0246 28.2558 26.1202 42.0006 28.553 45.1827C28.5676 45.2122 28.5822 45.2269 28.5967 45.2564C28.6405 45.2858 28.6842 45.3153 28.7279 45.3447C31.7871 47.8934 45.0731 58.5298 49.1376 54.2281C49.1376 54.2281 49.5163 53.8303 54.4694 48.5858C54.7754 48.2617 55.2852 48.188 55.664 48.4384L72.5628 59.6052C73.0581 59.9293 73.1455 60.607 72.7522 61.0489Z"
+                                        fill="white" />
+                                    <defs>
+                                        <clipPath id="clip0_123_401">
+                                            <rect width="73" height="75" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                            <span class="flex flex-row lg:mt-6 underline text-blue-400 text-lg ml-4 lg:ml-0 lg:text-base my-auto">
+                                <span>(+33)6 52 16 93 07</span>
+                                <button id="referenceTel" class="ml-4" data-tooltip-target="tooltipTel" type="button"
+                                    class="w-1/12 ml-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-6 w-6 active">
+                                        <path d="M0 448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H224c-53 0-96-43-96-96V160H64c-35.3 0-64 28.7-64 64V448zm224-96H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64z" fill="currentColor"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-6 w-6 hidden">
+                                        <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" fill="currentColor"/>
+                                    </svg>
+                                </button>
+
+                                <div id="tooltipTel" role="tooltip"
+                                    class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                                    Copier
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+                            </span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+    </body>
+
+    <div id="footer"></div>
+</body>
+
+</html>
